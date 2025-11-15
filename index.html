@@ -4,19 +4,24 @@
   <meta charset="UTF-8" />
   <title>Walnut Blasting Halesowen | Kovacs Services Ltd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="Professional walnut blasting in Halesowen for petrol and diesel engines. Intake valve carbon cleaning, EGR and intake manifold cleaning, and optional ultrasonic injector cleaning. Next working day turnaround at Kovacs Services Ltd." />
+  <meta
+    name="description"
+    content="Walnut blasting specialist in Halesowen. Professional intake valve and port carbon cleaning, with optional diesel intake & EGR cleaning and ultrasonic injector cleaning. Visits strictly by appointment at Kovacs Services Ltd."
+  />
   <meta name="robots" content="index,follow" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
     :root {
       --page-bg: #f3f4f6;
-      --header-bg: linear-gradient(135deg, #0f172a, #1d4ed8);
+      --header-bg: #f9fafb;
       --section-bg: #ffffff;
       --card-bg: #ffffff;
       --soft-bg: #f9fafb;
@@ -24,6 +29,7 @@
       --accent: #f97316;
       --accent-soft: rgba(249, 115, 22, 0.08);
       --accent-strong: #ea580c;
+      --accent-blue: #1d4ed8;
 
       --text-main: #0f172a;
       --text-soft: #4b5563;
@@ -51,7 +57,8 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
       background: var(--page-bg);
       color: var(--text-main);
       scroll-behavior: smooth;
@@ -85,79 +92,14 @@
       padding: 0 1.5rem;
     }
 
-    /* Top bar */
-    .top-bar {
-      background: var(--header-bg);
-      color: var(--text-invert);
-      font-size: 0.85rem;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.4);
-    }
-
-    .top-bar-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.45rem 1.5rem;
-    }
-
-    .top-bar-left {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem 1.2rem;
-      align-items: center;
-    }
-
-    .top-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.12rem 0.7rem;
-      border-radius: var(--radius-pill);
-      background: rgba(15, 23, 42, 0.5);
-      border: 1px solid rgba(148, 163, 184, 0.6);
-    }
-
-    .top-pill span:first-child {
-      font-size: 0.9rem;
-    }
-
-    .top-bar-right {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .top-bar-phone {
-      font-weight: 500;
-    }
-
-    .top-bar-phone strong {
-      font-weight: 700;
-    }
-
-    .top-bar-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.25rem 0.85rem;
-      border-radius: var(--radius-pill);
-      background: linear-gradient(135deg, #f97316, #fbbf24);
-      color: #111827;
-      font-weight: 600;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.8);
-      font-size: 0.78rem;
-    }
-
     /* Header / nav */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 40;
-      background: rgba(248, 250, 252, 0.95);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(209, 213, 219, 0.8);
+      background: rgba(249, 250, 251, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(209, 213, 219, 0.9);
     }
 
     .nav {
@@ -171,14 +113,19 @@
     .nav-left {
       display: flex;
       align-items: center;
-      gap: 0.8rem;
+      gap: 0.9rem;
     }
 
     .logo-mark {
       width: 40px;
       height: 40px;
       border-radius: 1.15rem;
-      background: radial-gradient(circle at 20% 0, #f97316 0, #ea580c 30%, #1d4ed8 110%);
+      background: radial-gradient(
+        circle at 20% 0,
+        #f97316 0,
+        #ea580c 30%,
+        #1d4ed8 110%
+      );
       display: flex;
       align-items: center;
       justify-content: center;
@@ -208,35 +155,31 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.4rem;
-      font-size: 0.9rem;
+      gap: 0.6rem;
+      font-size: 0.86rem;
     }
 
     .nav-link {
       position: relative;
-      padding: 0.15rem 0;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      background: transparent;
       color: var(--text-soft);
-      transition: color var(--transition-fast);
-    }
-
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0;
-      height: 2px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #f97316, #fbbf24);
-      transition: width 0.18s ease-out;
+      transition: var(--transition-fast);
+      font-weight: 500;
     }
 
     .nav-link:hover {
-      color: var(--accent-strong);
+      color: var(--accent-blue);
+      border-color: rgba(191, 219, 254, 1);
+      background: #eff6ff;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
     }
 
-    .nav-link:hover::after {
-      width: 100%;
+    .nav-link-primary {
+      border-color: rgba(209, 213, 219, 0.9);
+      background: #ffffff;
     }
 
     .nav-actions {
@@ -247,7 +190,7 @@
     }
 
     .btn-outline {
-      padding: 0.45rem 0.95rem;
+      padding: 0.5rem 1rem;
       border-radius: var(--radius-pill);
       border: 1px solid rgba(148, 163, 184, 0.9);
       background: #ffffff;
@@ -346,7 +289,7 @@
     .nav-links-mobile {
       display: none;
       flex-direction: column;
-      gap: 0.3rem;
+      gap: 0.4rem;
       padding: 0.75rem 1.5rem 1rem;
       background: #f9fafb;
       border-top: 1px solid rgba(209, 213, 219, 0.9);
@@ -354,12 +297,16 @@
 
     .nav-links-mobile a {
       font-size: 0.96rem;
-      padding: 0.35rem 0;
+      padding: 0.45rem 0.6rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
       color: var(--text-soft);
     }
 
     .nav-links-mobile a:hover {
-      color: var(--accent-strong);
+      border-color: rgba(191, 219, 254, 1);
+      background: #eff6ff;
+      color: var(--accent-blue);
     }
 
     .nav-links-mobile.show {
@@ -388,7 +335,11 @@
       gap: 0.55rem;
       padding: 0.22rem 0.75rem 0.22rem 0.22rem;
       border-radius: var(--radius-pill);
-      background: linear-gradient(90deg, rgba(59, 130, 246, 0.14), rgba(249, 250, 251, 1));
+      background: linear-gradient(
+        90deg,
+        rgba(59, 130, 246, 0.14),
+        rgba(249, 250, 251, 1)
+      );
       border: 1px solid rgba(191, 219, 254, 0.9);
       margin-bottom: 0.9rem;
       font-size: 0.8rem;
@@ -745,7 +696,7 @@
       align-items: flex-start;
     }
 
-    /* What & benefits (petrol + diesel) */
+    /* Lists & benefits */
     .list-check {
       list-style: none;
       margin: 0.8rem 0 0;
@@ -1076,7 +1027,7 @@
       color: var(--text-muted);
     }
 
-    /* Gallery */
+    /* Gallery (before & after) */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1457,12 +1408,6 @@
         grid-template-columns: minmax(0, 1fr);
       }
 
-      .top-bar-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-inline: 1.2rem;
-      }
-
       .nav {
         padding-inline: 1.2rem;
       }
@@ -1479,29 +1424,6 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Top bar -->
-    <div class="top-bar">
-      <div class="container top-bar-inner">
-        <div class="top-bar-left">
-          <div class="top-pill">
-            <span>⚙️</span>
-            <span>Specialist walnut blasting &amp; intake carbon cleaning in Halesowen</span>
-          </div>
-          <div class="top-pill">
-            <span>🚗</span>
-            <span>Petrol DI &amp; diesel intake/EGR cleaning • Next working day turnaround</span>
-          </div>
-        </div>
-        <div class="top-bar-right">
-          <span class="top-bar-phone">Call or WhatsApp: <strong>078-3382-3384</strong></span>
-          <a href="#contact" class="top-bar-cta">
-            <span>⚡</span>
-            <span>Request a call back</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Header -->
     <header class="site-header">
       <div class="container">
@@ -1511,13 +1433,13 @@
               <span>WB</span>
             </div>
             <div class="logo-text">
-              <span class="logo-text-main">Walnut Blasting Halesowen</span>
-              <span class="logo-text-sub">Intake carbon cleaning specialists</span>
+              <span class="logo-text-main">Walnut Blasting</span>
+              <span class="logo-text-sub">Halesowen intake carbon cleaning</span>
             </div>
           </div>
 
           <div class="nav-links">
-            <a href="#top" class="nav-link">Home</a>
+            <a href="#top" class="nav-link nav-link-primary">Home</a>
             <a href="#what" class="nav-link">What we do</a>
             <a href="#comparison" class="nav-link">Why walnut blasting</a>
             <a href="#process" class="nav-link">Process</a>
@@ -1527,13 +1449,13 @@
           </div>
 
           <div class="nav-actions">
-            <a href="tel:07833823384" class="btn-outline">
+            <a href="#contact" class="btn-outline">
+              <span>📅</span>
+              <span>Request a booking</span>
+            </a>
+            <a href="tel:07833823384" class="btn-primary">
               <span>📞</span>
               <span>Call 078-3382-3384</span>
-            </a>
-            <a href="#contact" class="btn-primary">
-              <span>📅</span>
-              <span>Request booking</span>
             </a>
             <button class="nav-toggle" type="button" aria-label="Toggle navigation">
               <div class="nav-toggle-line"></div>
@@ -1559,45 +1481,48 @@
         <div class="hero-left">
           <div class="hero-kicker">
             <span class="hero-kicker-badge">Halesowen</span>
-            <span>Precision walnut blasting for petrol &amp; diesel intake systems</span>
+            <span>Specialist walnut blasting for intake valves &amp; ports</span>
           </div>
 
           <h1 class="hero-title">
             Restore lost power with
-            <span class="highlight">proper walnut blasting</span> – not gimmicks.
+            <span class="highlight">proper walnut blasting in Halesowen</span>.
           </h1>
 
           <p class="hero-subtitle">
-            We mechanically remove carbon from intake valves, ports, EGRs and manifolds using crushed walnut shell media.
-            No HHO “magic gas”, no miracle sprays – just the safest and most thorough way to clean carbon without
-            damaging your engine.
+            Our main service is <strong>walnut blasting of cylinder ports and intake valves</strong> –
+            the safest and most effective way to remove heavy carbon build-up on modern engines.
+            We also offer optional extras such as intake manifold, diesel intake &amp; EGR cleaning and
+            ultrasonic injector cleaning.
           </p>
 
           <div class="hero-bullets">
             <div class="hero-bullet">
               <span class="hero-bullet-icon">⚡</span>
               <span>
-                <strong>Symptoms:</strong> hesitation, flat spots, rough idle, poor MPG, misfires, sluggish performance.
+                <strong>Common symptoms:</strong> hesitation, flat spots, rough idle, poor MPG,
+                misfires, sluggish performance.
               </span>
             </div>
             <div class="hero-bullet">
               <span class="hero-bullet-icon">🚗</span>
               <span>
-                <strong>Engines covered:</strong> VAG TFSI/TSI, BMW N-series, Mercedes CGI, Ford EcoBoost, GDI, plus
-                diesel intake/EGR systems.
+                <strong>Who it suits:</strong> VAG TFSI/TSI, BMW N-series, Mercedes CGI, Ford EcoBoost,
+                GDI and more – plus diesel intake/EGR systems as an add-on.
               </span>
             </div>
             <div class="hero-bullet">
-              <span class="hero-bullet-icon">✅</span>
+              <span class="hero-bullet-icon">🔧</span>
               <span>
-                <strong>Results:</strong> smoother idle, sharper throttle, better fuel economy, fewer regeneration issues.
+                <strong>Main focus:</strong> direct walnut blasting of the intake valves and ports,
+                with optional extras (manifold, EGR, injectors) to complete the job.
               </span>
             </div>
             <div class="hero-bullet">
               <span class="hero-bullet-icon">⏱️</span>
               <span>
-                <strong>Turnaround:</strong> typically next working day (24 hours). Some engines require bumper/radiator
-                removal – we’ll confirm when quoting.
+                <strong>Turnaround:</strong> typically next working day (around 24 hours). Some engines
+                require bumper or radiator removal – we’ll confirm when quoting.
               </span>
             </div>
           </div>
@@ -1608,33 +1533,35 @@
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
-              <div class="hero-rating-main">10/10 for throttle response &amp; drivability improvements</div>
-              <div class="hero-rating-sub">Feedback from local owners after a proper walnut blast and reset.</div>
+              <div class="hero-rating-main">
+                10/10 for throttle response &amp; drivability improvements
+              </div>
+              <div class="hero-rating-sub">
+                The usual feedback once the carbon is gone and the engine can breathe again.
+              </div>
             </div>
             <div class="hero-rating-spacer"></div>
             <div class="hero-rating-sub">
-              Every job includes inspection, photos and a clear explanation of what we’ve done and what’s improved.
+              Every job includes inspection, photos and a clear explanation of what we’ve done and
+              how it benefits your specific vehicle.
             </div>
           </div>
 
           <div class="hero-cta-row">
             <a href="#contact" class="btn-primary">
               <span>⚡</span>
-              <span>Get a walnut blasting quote</span>
-            </a>
-            <a href="tel:07833823384" class="btn-ghost">
-              <span>📞</span>
-              <span>Call 078-3382-3384</span>
+              <span>Request walnut blasting quote</span>
             </a>
             <a href="#pricing" class="btn-ghost">
               <span>💷</span>
-              <span>See guide pricing</span>
+              <span>View pricing &amp; options</span>
             </a>
           </div>
 
           <p class="hero-note">
-            Tell us your <strong>registration, mileage and symptoms</strong>. We’ll give an honest opinion on whether
-            walnut blasting (and optional injector cleaning) will genuinely benefit your car – not just sell you a job.
+            Tell us your <strong>registration, mileage and symptoms</strong>. We’ll give an honest
+            opinion on whether walnut blasting (and extras like intake/EGR cleaning or injector
+            cleaning) will genuinely benefit your car – not just sell you a treatment.
           </p>
         </div>
 
@@ -1643,7 +1570,9 @@
             <div class="hero-panel-header">
               <div>
                 <div style="font-weight:600;font-size:0.85rem;">Live intake health snapshot</div>
-                <div style="font-size:0.78rem;color:#374151;">Real-world example of a carbon-clogged engine we’ve cleaned.</div>
+                <div style="font-size:0.78rem;color:#374151;">
+                  Real-world example of a carbon-clogged engine we’ve cleaned.
+                </div>
               </div>
               <div class="hero-panel-badge">
                 <span class="hero-panel-dot"></span>
@@ -1653,14 +1582,14 @@
 
             <div class="hero-panel-body">
               <div class="hero-engine-card">
-                <div class="hero-engine-label">Example petrol engine</div>
-                <div class="hero-engine-main">VW/Audi 2.0 TFSI (EA888)</div>
+                <div class="hero-engine-label">Main service example (petrol)</div>
+                <div class="hero-engine-main">VW/Audi 2.0 TFSI – intake valves &amp; ports</div>
                 <div class="hero-engine-meta">
-                  84,000 miles • hesitation, uneven idle &amp; poor MPG before blasting.
+                  84,000 miles • hesitation, uneven idle &amp; poor MPG before walnut blasting.
                 </div>
 
                 <div class="hero-gauge-labels">
-                  <span>Restricted</span>
+                  <span>Restricted by carbon</span>
                   <span>Cleaned &amp; flowing</span>
                 </div>
                 <div class="hero-gauge-track">
@@ -1670,11 +1599,17 @@
                 <div class="hero-engine-before-after">
                   <div class="hero-engine-chip">
                     <span class="hero-engine-chip-label">Before</span>
-                    <span>Heavy carbon on all intake valves, misfires on cold start and flat mid-range.</span>
+                    <span>
+                      Heavy carbon on intake valves and ports, misfires on cold start and a flat,
+                      lazy mid-range.
+                    </span>
                   </div>
                   <div class="hero-engine-chip">
                     <span class="hero-engine-chip-label">After walnut blasting</span>
-                    <span>Clean valves and ports, smoother idle, stronger pull from 2,000 rpm and improved MPG.</span>
+                    <span>
+                      Clean valves and ports, smoother idle, sharper throttle and stronger pull
+                      from 2,000 rpm upwards.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -1682,9 +1617,9 @@
               <div class="hero-panel-list">
                 <div class="hero-panel-list-item">
                   <div>
-                    <div class="hero-panel-list-title">Common issues we target</div>
+                    <div class="hero-panel-list-title">Main problem we target</div>
                     <div class="hero-panel-list-sub">
-                      Hesitation, rough idle, misfires, poor fuel economy, DPF/EGR issues on diesels.
+                      Serious carbon build-up where additives and sprays simply can’t reach.
                     </div>
                   </div>
                   <div class="hero-panel-list-stat">
@@ -1695,34 +1630,35 @@
 
                 <div class="hero-panel-list-item">
                   <div>
-                    <div class="hero-panel-list-title">Usual visit time</div>
+                    <div class="hero-panel-list-title">Typical visit time</div>
                     <div class="hero-panel-list-sub">
-                      Drop off one day, collect next working day in most cases.
+                      Drop off one day, collect the next working day in most cases.
                     </div>
                   </div>
                   <div class="hero-panel-list-stat">
                     <div><strong>~24 hours</strong></div>
-                    <div class="hero-panel-list-sub">Some engines require more strip-down</div>
+                    <div class="hero-panel-list-sub">Some engines need extra strip-down</div>
                   </div>
                 </div>
 
                 <div class="hero-panel-list-item">
                   <div>
-                    <div class="hero-panel-list-title">Optional add-on</div>
+                    <div class="hero-panel-list-title">Optional extras</div>
                     <div class="hero-panel-list-sub">
-                      Ultrasonic injector cleaning while everything is stripped down.
+                      Intake manifold cleaning, diesel intake &amp; EGR cleaning and ultrasonic
+                      injector cleaning as add-ons.
                     </div>
                   </div>
                   <div class="hero-panel-list-stat">
                     <div><strong>+£99</strong></div>
-                    <div class="hero-panel-list-sub">When done with walnut blasting</div>
+                    <div class="hero-panel-list-sub">Injector ultrasonic clean with blasting</div>
                   </div>
                 </div>
               </div>
 
               <div class="hero-panel-footer">
-                You get before &amp; after photos of your own engine – not stock images – so you can see exactly what
-                you’ve paid for.
+                You get before &amp; after photos of your own engine – not stock images – so you
+                can see exactly what you’ve paid for.
               </div>
             </div>
           </div>
@@ -1730,26 +1666,32 @@
       </div>
     </section>
 
-    <!-- What we do (petrol + diesel) -->
+    <!-- What we do: main service + extras -->
     <section id="what">
       <div class="container">
         <div class="grid-2">
+          <!-- Main walnut blasting service -->
           <div>
             <div class="section-header">
-              <div class="section-kicker">What we actually do</div>
-              <h2 class="section-title">Proper walnut blasting for modern petrol engines</h2>
+              <div class="section-kicker">Main service</div>
+              <h2 class="section-title">
+                Walnut blasting of intake valves and cylinder ports
+              </h2>
               <p class="section-description">
-                On direct-injection petrol engines, fuel is sprayed straight into the combustion chamber – not over the intake
-                valves. There’s nothing to wash away oil vapour and carbon, so deposits build up and choke air flow. We fix
-                that with controlled walnut shell blasting.
+                This is the core of what we do. On modern direct-injection petrol engines, fuel is
+                sprayed straight into the combustion chamber – not over the intake valves – so
+                deposits build up and choke the air path. We remove that carbon mechanically.
               </p>
             </div>
 
             <div class="section-inner-card">
-              <h3 style="margin:0 0 0.3rem;font-size:1rem;">How our walnut blasting process works</h3>
+              <h3 style="margin:0 0 0.3rem;font-size:1rem;">
+                How the walnut blasting process works
+              </h3>
               <p style="margin:0 0 0.6rem;font-size:0.9rem;color:var(--text-soft);">
-                We use crushed walnut shell media at carefully controlled pressure to strip carbon from the valves and ports
-                without damaging metal surfaces. It’s a mechanical clean – not a chemical guess.
+                We use crushed walnut shell media at carefully controlled pressure to strip carbon from
+                the intake valves and ports without damaging metal surfaces. It’s a direct, mechanical
+                clean of the exact area that causes hesitation, misfires and power loss.
               </p>
 
               <ul class="list-check">
@@ -1757,32 +1699,32 @@
                   <span class="list-check-icon">🧰</span>
                   <span>
                     <span class="list-check-strong">Intake manifold removed properly</span><br />
-                    We remove the manifold and related parts to access each port directly – no “spray it through the throttle
-                    body” shortcuts.
+                    We strip the intake manifold and related parts to access each port directly – no
+                    “spray it through the throttle body” shortcuts.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">🔒</span>
                   <span>
                     <span class="list-check-strong">Valves closed &amp; protected</span><br />
-                    We turn the engine by hand so only the cylinder we’re working on has its valves closed, preventing media
-                    from entering the combustion chamber.
+                    The engine is turned by hand so only the cylinder being cleaned has closed valves,
+                    keeping walnut media out of the combustion chamber.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">🧹</span>
                   <span>
                     <span class="list-check-strong">Controlled blast &amp; extraction</span><br />
-                    Specialist blasting wands and extraction remove loosened carbon immediately, keeping ports and the engine
-                    bay clean.
+                    Specialist wands and extraction remove loosened carbon immediately, keeping ports,
+                    cylinders and the engine bay clean.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">📸</span>
                   <span>
                     <span class="list-check-strong">Before &amp; after proof</span><br />
-                    We borescope or photograph each port so you can see the difference on <em>your</em> engine – not a generic
-                    online photo.
+                    We borescope or photograph each port so you can see the exact difference on
+                    <em>your</em> valves – no generic stock photos.
                   </span>
                 </li>
               </ul>
@@ -1790,47 +1732,52 @@
               <div class="pill-row">
                 <span class="pill-small">TFSI / TSI / GDI / CGI</span>
                 <span class="pill-small">Performance &amp; daily drivers</span>
+                <span class="pill-small">Ideal before mapping</span>
                 <span class="pill-small">Preventative maintenance</span>
-                <span class="pill-small">Tuned &amp; mapped cars welcomed</span>
               </div>
             </div>
           </div>
 
+          <!-- Extras / add-ons -->
           <div>
             <div class="section-header">
-              <div class="section-kicker">Diesel &amp; intake systems</div>
-              <h2 class="section-title">Diesel intake, EGR &amp; manifold cleaning</h2>
+              <div class="section-kicker">Extras &amp; add-ons</div>
+              <h2 class="section-title">
+                Intake manifolds, diesel intake &amp; EGR, injector cleaning
+              </h2>
               <p class="section-description">
-                Diesels suffer from a different but equally nasty problem: EGR soot and oily vapour clogging the intake
-                manifold, ports and valves. We can clean these properly using mechanical methods and walnut blasting where
-                appropriate.
+                Walnut blasting of the intake valves and ports is the main event. But when the car is
+                apart, it often makes sense to add extra cleaning work so the whole air/fuel path is
+                working as it should.
               </p>
             </div>
 
             <div class="section-inner-card">
-              <h3 style="margin:0 0 0.3rem;font-size:1rem;">What we can clean on diesel engines</h3>
+              <h3 style="margin:0 0 0.3rem;font-size:1rem;">Optional extras we can add</h3>
+
               <ul class="list-check">
-                <li>
-                  <span class="list-check-icon">🌫️</span>
-                  <span>
-                    <span class="list-check-strong">EGR valves &amp; housings</span><br />
-                    Sticky or partially blocked EGRs can cause hesitation, flat spots, smoke and fault codes.
-                  </span>
-                </li>
                 <li>
                   <span class="list-check-icon">🌀</span>
                   <span>
-                    <span class="list-check-strong">Intake manifolds &amp; ports</span><br />
-                    We remove the manifold and clean the heavy soot/oil build-up that reduces air flow and increases
-                    emissions.
+                    <span class="list-check-strong">Intake manifold cleaning</span><br />
+                    Removes oily sludge and carbon from the manifold interior that can disrupt
+                    air-flow and swirl, especially on higher-mileage engines.
                   </span>
                 </li>
                 <li>
-                  <span class="list-check-icon">🔥</span>
+                  <span class="list-check-icon">🌫️</span>
                   <span>
-                    <span class="list-check-strong">Better breathing = happier DPF</span><br />
-                    A clean intake helps the engine breathe properly, which can reduce regeneration issues and improve fuel
-                    economy.
+                    <span class="list-check-strong">Diesel intake &amp; EGR cleaning</span><br />
+                    Sticky EGR valves and soot-packed manifolds are common on diesels – cleaning them
+                    can improve response and help DPF systems work more reliably.
+                  </span>
+                </li>
+                <li>
+                  <span class="list-check-icon">💧</span>
+                  <span>
+                    <span class="list-check-strong">Ultrasonic injector cleaning (+£99)</span><br />
+                    While everything is apart, we can ultrasonically clean injectors on the bench so
+                    the fuel side is as healthy as the air side.
                   </span>
                 </li>
               </ul>
@@ -1839,27 +1786,90 @@
                 <div class="benefit-card">
                   <div class="benefit-title">Improved drivability</div>
                   <div class="benefit-sub">
-                    Sharper response, less hesitation and smoother power delivery across the rev range.
+                    Sharper response, fewer flat spots and smoother power delivery through the rev
+                    range.
                   </div>
                 </div>
                 <div class="benefit-card">
                   <div class="benefit-title">Better fuel economy</div>
                   <div class="benefit-sub">
-                    The engine doesn’t have to fight through restricted ports, so it can run more efficiently.
+                    When both intake and injectors are clean, the engine doesn’t have to fight
+                    restrictions or poor spray patterns.
                   </div>
                 </div>
                 <div class="benefit-card">
-                  <div class="benefit-title">Lower emissions</div>
+                  <div class="benefit-title">Happier emissions systems</div>
                   <div class="benefit-sub">
-                    Cleaner intake systems can help reduce smoke and emissions – especially important for MOTs.
+                    Cleaner intake and EGR paths reduce soot loading and can help DPF systems last
+                    longer with fewer regeneration issues.
                   </div>
                 </div>
               </div>
 
               <div class="pill-row">
-                <span class="pill-small">Diesel intake &amp; EGR clean</span>
-                <span class="pill-small">Helps DPF longevity</span>
-                <span class="pill-small">Ideal before mapping</span>
+                <span class="pill-small">Diesel intake &amp; EGR add-on</span>
+                <span class="pill-small">Injector ultrasonic clean +£99</span>
+                <span class="pill-small">Manifold clean while apart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Short services overview -->
+        <div style="margin-top:2.5rem;">
+          <div class="section-header">
+            <div class="section-kicker">Services overview</div>
+            <h2 class="section-title">What we offer at Kovacs Services Ltd</h2>
+            <p class="section-description">
+              From the core walnut blasting service to optional extras, everything is built around
+              doing the job once, properly – not chasing quick chemical fixes.
+            </p>
+          </div>
+
+          <div class="service-cards">
+            <div class="service-card">
+              <div class="service-card-header">
+                <div class="service-card-title">Walnut blasting – intake valves &amp; ports</div>
+                <div class="service-badge service-badge-accent">Main service</div>
+              </div>
+              <div class="service-text">
+                Full intake removal and walnut blasting of each port and valve on modern petrol
+                direct-injection engines. The most direct, proven way to remove thick carbon where it
+                matters.
+              </div>
+              <div class="service-meta">
+                <span>Engines: TFSI / TSI / GDI / CGI etc.</span>
+                <span>From ~50–70k miles / tuned cars sooner</span>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card-header">
+                <div class="service-card-title">Intake manifold &amp; diesel intake/EGR clean</div>
+                <div class="service-badge">Add-on</div>
+              </div>
+              <div class="service-text">
+                Optional cleaning of intake manifolds, diesel intake tracts and EGR assemblies while
+                the car is already apart. Ideal for smokey diesels, regens and higher-mileage engines.
+              </div>
+              <div class="service-meta">
+                <span>Helps airflow &amp; emissions</span>
+                <span>Quoted as an extra when needed</span>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card-header">
+                <div class="service-card-title">Ultrasonic injector cleaning</div>
+                <div class="service-badge">Add-on</div>
+              </div>
+              <div class="service-text">
+                Bench ultrasonic cleaning of injectors as an optional extra when we’re performing
+                walnut blasting. A cost-effective way to refresh the fuel side at the same time.
+              </div>
+              <div class="service-meta">
+                <span>Add-on price: +£99</span>
+                <span>Available on petrol &amp; many diesel setups</span>
               </div>
             </div>
           </div>
@@ -1872,15 +1882,20 @@
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Why walnut blasting</div>
-          <h2 class="section-title">Why walnut blasting beats HHO, additives and sprays</h2>
+          <h2 class="section-title">
+            Why walnut blasting beats HHO, additives and sprays
+          </h2>
           <p class="section-description">
-            There are plenty of products claiming to “clean carbon” – HHO gas machines, in-tank additives, intake sprays
-            and magic treatments. Most of them never physically touch the thick carbon on the back of the valves or deep
-            in the intake. Walnut blasting does.
+            HHO machines, in-tank additives and intake sprays rarely touch the thick carbon stuck to
+            the back of intake valves. Walnut blasting physically removes it without attacking
+            seals or metal, and you get photos to prove it.
           </p>
         </div>
 
-        <div class="comparison-table" aria-label="Comparison of carbon cleaning methods">
+        <div
+          class="comparison-table"
+          aria-label="Comparison of carbon cleaning methods"
+        >
           <div class="comparison-header-row">
             <div></div>
             <div>HHO / gas machines</div>
@@ -1889,43 +1904,61 @@
           </div>
           <div class="comparison-body">
             <div class="comparison-row">
-              <div class="comparison-label">Removes heavy carbon from intake valves</div>
+              <div class="comparison-label">
+                Removes heavy carbon from intake valves
+              </div>
               <div class="comparison-cell">❌ Mostly wishful thinking</div>
               <div class="comparison-cell">❌ At best, very limited</div>
-              <div class="comparison-cell comparison-highlight">✅ Yes – we see it and photograph it gone</div>
+              <div class="comparison-cell comparison-highlight">
+                ✅ Yes – the deposits are physically blasted off and removed
+              </div>
             </div>
             <div class="comparison-row">
               <div class="comparison-label">Direct mechanical cleaning</div>
-              <div class="comparison-cell">❌ No – relies on gas flow</div>
-              <div class="comparison-cell">❌ Chemical only</div>
-              <div class="comparison-cell comparison-highlight">✅ Crushed walnut shell media, port by port</div>
+              <div class="comparison-cell">❌ No – relies on gas flowing past</div>
+              <div class="comparison-cell">❌ Chemical contact only</div>
+              <div class="comparison-cell comparison-highlight">
+                ✅ Crushed walnut shell media, port-by-port, valve-by-valve
+              </div>
             </div>
             <div class="comparison-row">
               <div class="comparison-label">Risk to engine components</div>
-              <div class="comparison-cell">⚠️ Poorly understood, can stress components</div>
-              <div class="comparison-cell">⚠️ Some chemicals aggressive on plastics/rubbers</div>
+              <div class="comparison-cell">
+                ⚠️ Poorly understood in many cases, can stress components
+              </div>
+              <div class="comparison-cell">
+                ⚠️ Some chemicals harsh on plastics/rubbers
+              </div>
               <div class="comparison-cell comparison-highlight">
-                ✅ Walnut shell is softer than metal – safe when valves are kept closed
+                ✅ Walnut shell is softer than metal – safe when valves are kept closed and
+                extraction is used properly
               </div>
             </div>
             <div class="comparison-row">
               <div class="comparison-label">Evidence for the customer</div>
               <div class="comparison-cell">❌ Usually none</div>
-              <div class="comparison-cell">❌ Often “trust the feeling”</div>
-              <div class="comparison-cell comparison-highlight">✅ Before &amp; after photos of your own engine</div>
+              <div class="comparison-cell">❌ Often “trust how it feels”</div>
+              <div class="comparison-cell comparison-highlight">
+                ✅ Before &amp; after photos of your own engine, not stock images
+              </div>
             </div>
             <div class="comparison-row">
               <div class="comparison-label">Best use case</div>
-              <div class="comparison-cell">Marketing more than maintenance</div>
-              <div class="comparison-cell">Mild clean for light deposits</div>
-              <div class="comparison-cell comparison-highlight">Serious carbon removal &amp; preventative maintenance</div>
+              <div class="comparison-cell">
+                Marketing more than maintenance in many cases
+              </div>
+              <div class="comparison-cell">Light deposits at best</div>
+              <div class="comparison-cell comparison-highlight">
+                Serious carbon removal &amp; preventative maintenance for modern engines
+              </div>
             </div>
           </div>
         </div>
 
         <p style="margin-top:1rem;font-size:0.86rem;color:var(--text-soft);">
-          We’ve built this service around being the <strong>most thorough, repeatable and safe</strong> way to remove
-          intake carbon currently available – not the quickest “miracle” spray on the market.
+          We’ve built this service around being the
+          <strong>most thorough, repeatable and safe</strong> way to remove intake carbon
+          currently available – not the quickest “miracle spray” on the shelf.
         </p>
       </div>
     </section>
@@ -1937,8 +1970,8 @@
           <div class="section-kicker">How it works</div>
           <h2 class="section-title">Our walnut blasting process – step by step</h2>
           <p class="section-description">
-            Every engine is slightly different, but the workflow is similar. You know exactly what’s happening to your
-            car from drop-off to collection.
+            Every engine is slightly different, but the workflow is similar. You’ll know exactly
+            what’s happening to your car from drop-off to collection.
           </p>
         </div>
 
@@ -1948,8 +1981,9 @@
             <div class="process-title">Check-in &amp; diagnostics</div>
             <div class="process-time">Approx. 30–45 minutes</div>
             <div class="process-text">
-              We confirm your engine, mileage and symptoms, run a proper diagnostic scan and check for other issues that
-              could be causing your complaint. If we find anything concerning, we’ll talk you through it before starting.
+              We confirm your engine, mileage and symptoms, run a proper diagnostic scan and check for
+              other issues that could be causing your complaint. If we find anything else, we’ll talk
+              you through it before starting.
             </div>
           </div>
 
@@ -1958,29 +1992,31 @@
             <div class="process-title">Strip-down &amp; inspection</div>
             <div class="process-time">Approx. 1.5–3 hours</div>
             <div class="process-text">
-              Intake components, covers and ancillaries are removed for access. On some engines this includes front
-              bumper and cooling pack. We then inspect and photograph the carbon build-up so you can see the “before”.
+              Intake components, covers and ancillaries are removed for access. On some engines this
+              includes front bumper and cooling pack. We then inspect and photograph the carbon
+              build-up so you can see the “before”.
             </div>
           </div>
 
           <div class="process-step">
             <div class="process-number">3</div>
-            <div class="process-title">Controlled walnut blasting</div>
+            <div class="process-title">Walnut blasting of valves &amp; ports</div>
             <div class="process-time">Approx. 1.5–3 hours</div>
             <div class="process-text">
-              With each cylinder closed in turn, we blast the valves and ports using crushed walnut shells and extraction.
-              The carbon is physically removed from where it matters – not just dissolved and left to go somewhere else.
+              With each cylinder closed in turn, we blast the intake valves and ports using crushed
+              walnut shells with extraction. This is the main service: the carbon is physically
+              removed from the exact surfaces that cause hesitation and misfires.
             </div>
           </div>
 
           <div class="process-step">
             <div class="process-number">4</div>
-            <div class="process-title">Optional ultrasonic injector clean</div>
-            <div class="process-time">Approx. 1 hour (as add-on)</div>
+            <div class="process-title">Optional extras while apart</div>
+            <div class="process-time">Approx. 1 hour (add-ons)</div>
             <div class="process-text">
-              While everything is apart, we can ultrasonically clean your injectors on the bench for just
-              <strong>£99 extra</strong> when combined with walnut blasting. This helps ensure both fuel and air sides
-              are working at their best.
+              If requested, we clean intake manifolds, diesel intake/EGR circuits and perform
+              ultrasonic injector cleaning while everything is apart. This is a very cost-effective
+              time to look after those parts.
             </div>
           </div>
 
@@ -1989,8 +2025,9 @@
             <div class="process-title">Reassembly, resets &amp; checks</div>
             <div class="process-time">Approx. 1–2 hours</div>
             <div class="process-text">
-              Everything is refitted with new gaskets where required. We clear relevant codes, perform throttle and
-              adaptation resets where possible, and check carefully for leaks or faults.
+              Everything is refitted with new gaskets where required. We clear relevant codes,
+              perform throttle and adaptation resets where possible, and check carefully for leaks or
+              faults.
             </div>
           </div>
 
@@ -1999,8 +2036,9 @@
             <div class="process-title">Road test &amp; handover</div>
             <div class="process-time">Approx. 20–30 minutes</div>
             <div class="process-text">
-              We road test to confirm improvements, then show you the before &amp; after photos and explain what to
-              expect. We can also advise on oil quality, driving style and intervals to keep things cleaner for longer.
+              We road test to confirm improvements, then show you the before &amp; after photos and
+              explain what to expect. We can also advise on oil quality, driving style and intervals
+              to keep things cleaner for longer.
             </div>
           </div>
         </div>
@@ -2012,10 +2050,13 @@
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Pricing &amp; turnaround</div>
-          <h2 class="section-title">Transparent pricing for walnut blasting &amp; add-ons</h2>
+          <h2 class="section-title">
+            Transparent pricing for walnut blasting &amp; extras
+          </h2>
           <p class="section-description">
-            Final prices depend on engine code, layout and access, but these guide prices will give you a solid idea of
-            what to expect. We always confirm the exact figure and turnaround before starting any work.
+            Final prices depend on engine code, layout and access, but these guide prices will give
+            you a clear idea. We always confirm the exact figure and expected turnaround before
+            starting work.
           </p>
         </div>
 
@@ -2024,14 +2065,15 @@
             <div class="pricing-table">
               <div class="pricing-header">
                 <div>
-                  <div class="pricing-header-title">Guide prices (walnut blasting)</div>
+                  <div class="pricing-header-title">Guide prices (main service)</div>
                   <div class="pricing-header-sub">
-                    Includes diagnostics, manifold removal, blasting and reassembly. Gaskets charged separately.
+                    Includes diagnostics, intake removal, walnut blasting of valves/ports and
+                    reassembly. Gaskets and extras quoted separately.
                   </div>
                 </div>
                 <div class="pricing-header-sub" style="text-align:right;">
                   <div>Typical turnaround: next working day</div>
-                  <div>We’ll advise if your engine needs more time.</div>
+                  <div>Some engines may require longer – we’ll advise.</div>
                 </div>
               </div>
 
@@ -2040,12 +2082,14 @@
                   <div>
                     <div class="pricing-name">4-cylinder engines</div>
                     <div class="pricing-name-sub">
-                      Most 4-cyl direct-injection petrol or equivalent diesel intake/EGR jobs.
+                      Most 4-cyl direct-injection petrol engines, and equivalent labour level on
+                      diesel intake/EGR jobs.
                     </div>
                   </div>
                   <div class="pricing-price">from £379</div>
                   <div class="pricing-meta">
-                    Plus intake gaskets and any additional parts required. Ideal from ~50–70k miles or sooner on tuned cars.
+                    Plus intake gaskets and any additional parts required. Ideal from around
+                    50–70k miles, or sooner on tuned cars and hard-driven vehicles.
                   </div>
                 </div>
 
@@ -2053,12 +2097,13 @@
                   <div>
                     <div class="pricing-name">6-cylinder engines</div>
                     <div class="pricing-name-sub">
-                      e.g. BMW N54/N55, V6 TFSI and similar.
+                      e.g. BMW N54/N55, V6 TFSI and similar direct-injection setups.
                     </div>
                   </div>
-                  <div class="pricing-price">typically between 4-cyl &amp; V8</div>
+                  <div class="pricing-price">from £599</div>
                   <div class="pricing-meta">
-                    More valves and access time required. We’ll price based on engine code and layout after a quick chat.
+                    More valves and more complex access mean extra time. We’ll quote based on engine
+                    code and layout once we know the exact vehicle.
                   </div>
                 </div>
 
@@ -2066,27 +2111,29 @@
                   <div>
                     <div class="pricing-name">8-cylinder engines</div>
                     <div class="pricing-name-sub">
-                      V8 performance engines and more complex layouts.
+                      V8 performance engines and more involved layouts.
                     </div>
                   </div>
                   <div class="pricing-price">from £699</div>
                   <div class="pricing-meta">
-                    Plus gaskets and any additional parts. Access can be more involved – we’ll explain what’s needed for
-                    your specific car.
+                    Plus gaskets and any additional parts. Access can be significantly more involved
+                    – we’ll explain what’s required for your particular car.
                   </div>
                 </div>
 
                 <div class="pricing-row">
                   <div>
-                    <div class="pricing-name">Ultrasonic injector cleaning add-on</div>
+                    <div class="pricing-name">
+                      Ultrasonic injector cleaning (add-on)
+                    </div>
                     <div class="pricing-name-sub">
-                      When carried out alongside walnut blasting (petrol or diesel).
+                      When carried out alongside walnut blasting (petrol or suitable diesel).
                     </div>
                   </div>
                   <div class="pricing-price">+ £99</div>
                   <div class="pricing-meta">
-                    Injectors removed, cleaned ultrasonically on the bench and refitted while everything is already apart –
-                    a very cost-effective time to do it.
+                    Injectors removed, cleaned ultrasonically on the bench and refitted while the
+                    intake is already apart – very good value versus doing it separately.
                   </div>
                 </div>
 
@@ -2094,13 +2141,13 @@
                   <div>
                     <div class="pricing-name">Diagnostic assessment only</div>
                     <div class="pricing-name-sub">
-                      If you’re unsure whether carbon build-up is your main problem.
+                      If you’re unsure whether carbon build-up is your main issue.
                     </div>
                   </div>
                   <div class="pricing-price">from £XX</div>
                   <div class="pricing-meta">
-                    Includes scan, basic checks and advice. If you book walnut blasting soon after, we can offset part of
-                    this fee against the job.
+                    Includes scan, basic checks and realistic advice. If you go ahead with walnut
+                    blasting shortly afterwards, we can offset part of this fee against the job.
                   </div>
                 </div>
               </div>
@@ -2109,33 +2156,37 @@
 
           <aside>
             <div class="pricing-sidebar-card">
-              <div class="pricing-sidebar-title">Get a tailored quote for your registration</div>
+              <div class="pricing-sidebar-title">
+                Get a tailored quote for your registration
+              </div>
               <p style="margin:0 0 0.4rem;">
-                The fastest way is to send us your registration, mileage and a short description of the symptoms (hesitation,
-                misfires, smoke, MPG issues, etc.). We’ll confirm whether walnut blasting, diesel intake cleaning and/or
-                injector cleaning are recommended – and give you a clear price.
+                The quickest way is to send your registration, mileage and a short description of the
+                symptoms (hesitation, misfires, smoke, MPG issues, etc.). We’ll confirm whether
+                walnut blasting, intake/EGR cleaning and/or injector cleaning are recommended – and
+                give you a fixed price.
               </p>
               <div class="pricing-tag">
                 <span>📲</span>
-                <span>Use the booking form below or call 078-3382-3384</span>
+                <span>Use the booking form below and we’ll reply with a quote</span>
               </div>
             </div>
 
             <div class="pricing-sidebar-card">
-              <div class="pricing-sidebar-title">Turnaround &amp; expectations</div>
+              <div class="pricing-sidebar-title">Turnaround &amp; appointments</div>
               <p class="pricing-note">
-                Most jobs are completed for <strong>next working day (around 24 hours)</strong>. Some engines require front
-                bumper and radiator removal for proper access – where that’s the case, we’ll let you know if we need a little
-                more time.
+                Most jobs are completed for <strong>next working day (around 24 hours)</strong>.
+                Some engines require front bumper or radiator removal for proper access – where
+                that’s the case, we’ll let you know if we need more time. All visits are
+                <strong>strictly by appointment only</strong>.
               </p>
             </div>
 
             <div class="pricing-sidebar-card">
-              <div class="pricing-sidebar-title">Payment &amp; combining jobs</div>
+              <div class="pricing-sidebar-title">Payment &amp; combining work</div>
               <p class="pricing-note">
-                We accept cash and major debit/credit cards, with payment on collection. If you’re planning related work
-                (timing, injectors, wiring, etc.) we can often save labour by combining jobs while the engine is already
-                apart – just mention it when you contact us.
+                We accept cash and major debit/credit cards, with payment on collection. If you’re
+                planning related work (timing, injectors, wiring, etc.) we can often save labour by
+                combining jobs while the engine is already apart – just mention this when you book.
               </p>
             </div>
           </aside>
@@ -2143,94 +2194,121 @@
       </div>
     </section>
 
-    <!-- Before & after gallery (with placeholders) -->
+    <!-- Before & after gallery -->
     <section id="gallery">
       <div class="container">
         <div class="section-header">
-          <div class="section-kicker">Before &amp; after</div>
+          <div class="section-kicker">Real results</div>
           <h2 class="section-title">Real-world before &amp; after results</h2>
           <p class="section-description">
-            Below are spaces for real photos from your jobs – before and after walnut blasting or intake/EGR cleaning.
-            For now we’ve used placeholder images. You can simply replace the file names with your own RS4 and other
-            examples later.
+            This section is designed to showcase your own before and after photos – mainly of
+            walnut-blasted intake valves and ports, plus a few diesel EGR or intake manifold
+            examples as extras. For now it uses placeholder images you can replace later.
           </p>
         </div>
 
         <div class="gallery-grid">
-          <!-- Case 1 -->
+          <!-- Example 1: petrol valves -->
           <div class="gallery-card">
-            <div class="gallery-label">Case study</div>
-            <div class="gallery-title">Direct-injection petrol – heavy valve deposits</div>
+            <div class="gallery-label">Before &amp; after</div>
+            <div class="gallery-title">Direct-injection petrol – intake valves</div>
             <div class="gallery-images">
               <div class="gallery-image-wrap">
-                <img src="images/before-1.jpg" alt="Before walnut blasting – placeholder image" />
+                <img
+                  src="images/before-1.jpg"
+                  alt="Before walnut blasting – intake valves heavily carbon fouled (placeholder image)"
+                />
               </div>
               <div class="gallery-image-wrap">
-                <img src="images/after-1.jpg" alt="After walnut blasting – placeholder image" />
+                <img
+                  src="images/after-1.jpg"
+                  alt="After walnut blasting – intake valves clean and shiny (placeholder image)"
+                />
               </div>
             </div>
             <div class="gallery-caption">
-              Before: thick carbon choking the valves and ports. After: clean surfaces, restored air flow and smoother idle.
+              Before: thick deposits choking the valves and ports. After: clean metal surfaces,
+              smoother idle and noticeably sharper response.
             </div>
           </div>
 
-          <!-- Case 2 -->
+          <!-- Example 2: another petrol / RS-style -->
           <div class="gallery-card">
-            <div class="gallery-label">Case study</div>
-            <div class="gallery-title">Diesel intake &amp; EGR clean</div>
+            <div class="gallery-label">Before &amp; after</div>
+            <div class="gallery-title">Performance engine – ports before mapping</div>
             <div class="gallery-images">
               <div class="gallery-image-wrap">
-                <img src="images/before-2.jpg" alt="Before intake manifold cleaning – placeholder" />
+                <img
+                  src="images/before-2.jpg"
+                  alt="Before clean – performance engine ports restricted by carbon (placeholder image)"
+                />
               </div>
               <div class="gallery-image-wrap">
-                <img src="images/after-2.jpg" alt="After intake manifold cleaning – placeholder" />
+                <img
+                  src="images/after-2.jpg"
+                  alt="After clean – performance engine ports restored (placeholder image)"
+                />
               </div>
             </div>
             <div class="gallery-caption">
-              Before: sticky EGR, oily soot clogging the manifold. After: free-flowing intake, improved response and fewer
-              regen issues.
+              Cleaning the ports and valves before mapping gives the tuner a healthier base to work
+              with and helps avoid chasing carbon-related issues.
             </div>
           </div>
 
-          <!-- Case 3 -->
+          <!-- Example 3: diesel intake/EGR -->
           <div class="gallery-card">
-            <div class="gallery-label">Case study</div>
-            <div class="gallery-title">Performance engine before mapping</div>
+            <div class="gallery-label">Before &amp; after</div>
+            <div class="gallery-title">Diesel intake &amp; EGR cleaning (add-on)</div>
             <div class="gallery-images">
               <div class="gallery-image-wrap">
-                <img src="images/before-3.jpg" alt="Before clean on performance engine – placeholder" />
+                <img
+                  src="images/before-3.jpg"
+                  alt="Before clean – diesel EGR and intake clogged with soot (placeholder image)"
+                />
               </div>
               <div class="gallery-image-wrap">
-                <img src="images/after-3.jpg" alt="After clean on performance engine – placeholder" />
+                <img
+                  src="images/after-3.jpg"
+                  alt="After clean – diesel EGR and intake free from heavy soot (placeholder image)"
+                />
               </div>
             </div>
             <div class="gallery-caption">
-              Cleaning before mapping gives the tuner a healthier base to work with and helps avoid chasing carbon-related
-              problems.
+              Before: sticky EGR, oily soot clogging the manifold. After: freer breathing, better
+              drivability and fewer DPF regeneration headaches.
             </div>
           </div>
 
-          <!-- Case 4 -->
+          <!-- Example 4: daily driver -->
           <div class="gallery-card">
-            <div class="gallery-label">Case study</div>
+            <div class="gallery-label">Before &amp; after</div>
             <div class="gallery-title">Daily driver – short journeys &amp; town use</div>
             <div class="gallery-images">
               <div class="gallery-image-wrap">
-                <img src="images/before-4.jpg" alt="Before clean on daily driven car – placeholder" />
+                <img
+                  src="images/before-4.jpg"
+                  alt="Before clean – daily-driven engine with build-up (placeholder image)"
+                />
               </div>
               <div class="gallery-image-wrap">
-                <img src="images/after-4.jpg" alt="After clean on daily driven car – placeholder" />
+                <img
+                  src="images/after-4.jpg"
+                  alt="After clean – daily-driven engine intake surfaces clean (placeholder image)"
+                />
               </div>
             </div>
             <div class="gallery-caption">
-              Short trips and stop-start driving are hard on intake systems. A proper clean can make the car feel “new” again.
+              Short journeys and stop-start driving are hard on intake systems. A proper walnut blast
+              can make a tired-feeling car drive like it should again.
             </div>
           </div>
         </div>
 
         <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-muted);">
-          When you’re ready, just upload your own before/after photos (for example from your Audi RS4 jobs) to the
-          <code>images</code> folder and update the file names above – the layout will stay exactly the same.
+          When you’re ready, just upload your own before/after photos (for example from your Audi
+          RS4 and other jobs) to the <code>images</code> folder and update the file names above –
+          the layout will stay the same.
         </p>
       </div>
     </section>
@@ -2242,17 +2320,19 @@
           <div>
             <div class="section-header">
               <div class="section-kicker">Feedback</div>
-              <h2 class="section-title">What local owners typically say afterwards</h2>
+              <h2 class="section-title">
+                Typical feedback after walnut blasting &amp; intake cleaning
+              </h2>
               <p class="section-description">
-                Once people have driven their cars for a few days after walnut blasting or intake cleaning, these are the
-                kinds of comments we usually hear.
+                Once people have put some miles on their car after the clean, these are the kinds of
+                comments we usually hear.
               </p>
             </div>
 
             <div class="testimonial-card">
               <div class="testimonial-header">
                 <div>
-                  <div class="testimonial-name">VW/Audi petrol owner</div>
+                  <div class="testimonial-name">VW / Audi petrol owner</div>
                   <div class="testimonial-tag">Halesowen &amp; surrounding areas</div>
                 </div>
                 <div class="testimonial-rating">
@@ -2261,11 +2341,12 @@
                 </div>
               </div>
               <div class="testimonial-body">
-                “The hesitation between 2–3k revs has completely gone and it pulls properly again. Idle is smoother and
-                the car finally feels like the spec on paper.”
+                “The hesitation between 2–3k revs has gone and it finally pulls like it should.
+                Idle is smoother and I’m seeing better MPG on the same journeys.”
               </div>
               <div class="testimonial-meta">
-                Reported after walnut blasting and manifold clean around 80k miles on a direct-injection petrol engine.
+                Reported after walnut blasting of intake valves/ports and a manifold clean around
+                80k miles on a direct-injection petrol engine.
               </div>
             </div>
 
@@ -2281,13 +2362,16 @@
                 </div>
               </div>
               <div class="testimonial-body">
-                “It always felt a bit strangled and smoked under load. After the intake and EGR clean it’s much smoother
-                and the DPF isn’t kicking off as often.”
+                “It felt strangled and smoked under load. After the intake and EGR clean it’s much
+                smoother and the DPF regens aren’t happening as often.”
               </div>
               <div class="testimonial-meta">
-                Reported after diesel intake &amp; EGR cleaning on a higher-mileage daily driver.
+                Reported after diesel intake &amp; EGR cleaning as an add-on on a higher-mileage
+                daily driver.
               </div>
             </div>
+
+            <!-- You can add more testimonials by duplicating the card above -->
           </div>
 
           <div>
@@ -2295,71 +2379,87 @@
               <div class="section-kicker">FAQ</div>
               <h2 class="section-title">Frequently asked questions</h2>
               <p class="section-description">
-                If you’re unsure whether walnut blasting or intake cleaning is right for your vehicle, these answers will
-                help. If you’d like to talk it through, just call or send a booking request.
+                If you’re unsure whether walnut blasting or intake cleaning is right for your
+                vehicle, these answers will help. If you’d like to talk it through, just send a
+                booking request and we’ll respond with tailored advice.
               </p>
             </div>
 
             <div class="faq-list">
               <div class="faq-item">
                 <div class="faq-question">
-                  <div class="faq-question-text">Is walnut blasting safe for my engine?</div>
+                  <div class="faq-question-text">
+                    Is walnut blasting safe for my engine?
+                  </div>
                   <div class="faq-toggle">+</div>
                 </div>
                 <div class="faq-answer">
-                  Yes – when done properly. We close the valves on the cylinder we’re working on, control the air pressure
-                  and use extraction to remove media and carbon as we go. Walnut shell is softer than metal, so it cleans
-                  deposits without damaging valve seats or ports.
+                  Yes – when done properly. We close the valves on the cylinder we’re working on,
+                  control the air pressure and use extraction to remove media and carbon as we go.
+                  Walnut shell is softer than metal, so it cleans deposits without damaging valve
+                  seats or ports when used correctly.
                 </div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">
-                  <div class="faq-question-text">Will this help with misfires, hesitation or EML lights?</div>
+                  <div class="faq-question-text">
+                    Will it help with misfires, hesitation or an EML light?
+                  </div>
                   <div class="faq-toggle">+</div>
                 </div>
                 <div class="faq-answer">
-                  If those issues are caused or made worse by heavy carbon build-up or a clogged intake, walnut blasting and
-                  intake cleaning can make a big difference. But misfires and EML lights can also be caused by coils, plugs,
-                  injectors, wiring or mechanical faults – that’s why we always start with diagnostics and, where helpful,
-                  offer ultrasonic injector cleaning as well.
+                  If those issues are caused or made worse by heavy carbon build-up or a clogged
+                  intake, walnut blasting and intake cleaning can make a big difference. Misfires
+                  and warning lights can also be caused by coils, plugs, injectors, wiring or
+                  mechanical faults – that’s why we always start with diagnostics, and why we offer
+                  ultrasonic injector cleaning as an optional extra.
                 </div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">
-                  <div class="faq-question-text">How often should walnut blasting or intake cleaning be done?</div>
+                  <div class="faq-question-text">
+                    How often should walnut blasting or intake cleaning be done?
+                  </div>
                   <div class="faq-toggle">+</div>
                 </div>
                 <div class="faq-answer">
-                  As a rough guide, many direct-injection petrol engines benefit around 50–70k miles, then roughly every
-                  40–50k depending on use, oil quality and tuning. Diesel intake/EGR cleaning is often helpful once heavier
-                  deposits build up or when symptoms appear. We’ll always give a realistic recommendation based on your car,
-                  not a sales script.
+                  Many direct-injection petrol engines benefit around 50–70k miles, then roughly
+                  every 40–50k depending on use, oil quality and tuning. Diesel intake/EGR cleaning
+                  is often useful when symptoms appear or as preventative work on higher-mileage
+                  vehicles. We’ll always give a realistic recommendation based on your car and the
+                  way you use it.
                 </div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">
-                  <div class="faq-question-text">Do you need the car for the whole day?</div>
+                  <div class="faq-question-text">
+                    Do you need the car for the whole day?
+                  </div>
                   <div class="faq-toggle">+</div>
                 </div>
                 <div class="faq-answer">
-                  For most 4-cylinder engines we aim for next working day turnaround: drop off one day, collect the next.
-                  More complex engines – especially V6/V8 layouts or those needing bumper/radiator removal – can take
-                  longer. We’ll explain the plan and expected timescale when we quote.
+                  For most 4-cylinder engines we work on a next working day basis: drop off one day,
+                  collect the next. More complex engines – especially V6/V8 layouts or those needing
+                  bumper/radiator removal – can take longer. We’ll explain the plan and expected
+                  timescale when we quote.
                 </div>
               </div>
 
               <div class="faq-item">
                 <div class="faq-question">
-                  <div class="faq-question-text">What do I need to do before bringing the car in?</div>
+                  <div class="faq-question-text">
+                    What do I need to do before bringing the car in?
+                  </div>
                   <div class="faq-toggle">+</div>
                 </div>
                 <div class="faq-answer">
-                  Ideally, bring the car with at least a quarter tank of fuel and remove valuables from the interior. If
-                  you’ve recently had work such as timing chains, injector replacements or mapping, let us know – it helps
-                  us build the full picture and set expectations.
+                  Ideally, bring the car with at least a quarter tank of fuel and remove valuables.
+                  If you’ve recently had work such as timing chains, injector replacements or
+                  mapping, let us know – it helps us build the full picture and set expectations.
+                  Visits are strictly by appointment only, so please contact us before arriving.
                 </div>
               </div>
             </div>
@@ -2373,56 +2473,109 @@
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Bookings &amp; contact</div>
-          <h2 class="section-title">Request a walnut blasting / intake cleaning quote</h2>
+          <h2 class="section-title">
+            Request a walnut blasting / intake cleaning quote
+          </h2>
           <p class="section-description">
-            Fill in the quick form below, call us, or send a message with your registration, mileage and a brief
-            description of the symptoms. We’ll get back to you with a clear recommendation and price.
+            Use the form below to send your registration, mileage and a brief description of the
+            symptoms. We’ll get back to you with a clear recommendation and price. Visits are
+            strictly by appointment only.
           </p>
         </div>
 
         <div class="contact-grid">
           <div>
             <!-- You can hook this form up to a backend or form service later -->
-            <form class="contact-form-card" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <form
+              class="contact-form-card"
+              action="mailto:youremail@example.com"
+              method="post"
+              enctype="text/plain"
+            >
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="name">Full name <span class="form-required">*</span></label>
-                  <input class="form-control" type="text" id="name" name="name" required />
+                  <label class="form-label" for="name"
+                    >Full name <span class="form-required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="phone">Phone number <span class="form-required">*</span></label>
-                  <input class="form-control" type="tel" id="phone" name="phone" required />
+                  <label class="form-label" for="phone"
+                    >Phone number <span class="form-required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="email">Email address</label>
-                  <input class="form-control" type="email" id="email" name="email" />
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="reg">Vehicle registration <span class="form-required">*</span></label>
-                  <input class="form-control" type="text" id="reg" name="reg" required />
+                  <label class="form-label" for="reg"
+                    >Vehicle registration <span class="form-required">*</span></label
+                  >
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="reg"
+                    name="reg"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="engine">Engine / model</label>
-                  <input class="form-control" type="text" id="engine" name="engine"
-                         placeholder="e.g. 2.0 TFSI, 3.0 TDI, N54, 2.0 EcoBoost..." />
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="engine"
+                    name="engine"
+                    placeholder="e.g. 2.0 TFSI, 3.0 TDI, N54, 2.0 EcoBoost..."
+                  />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="mileage">Current mileage (approx.)</label>
-                  <input class="form-control" type="number" id="mileage" name="mileage" />
+                  <label class="form-label" for="mileage"
+                    >Current mileage (approx.)</label
+                  >
+                  <input
+                    class="form-control"
+                    type="number"
+                    id="mileage"
+                    name="mileage"
+                  />
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="service">What are you interested in?</label>
                 <select class="form-select" id="service" name="service">
-                  <option value="walnut-petrol">Walnut blasting – petrol intake valves</option>
-                  <option value="diesel-intake">Diesel intake &amp; EGR cleaning</option>
+                  <option value="walnut-petrol">
+                    Walnut blasting – intake valves &amp; ports (main service)
+                  </option>
+                  <option value="diesel-intake">
+                    Diesel intake &amp; EGR cleaning (add-on / by request)
+                  </option>
                   <option value="walnut-plus-injector">
                     Walnut blasting + ultrasonic injector cleaning
                   </option>
@@ -2432,9 +2585,15 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="message">Describe the symptoms or what you’re looking for</label>
-                <textarea class="form-textarea" id="message" name="message"
-                          placeholder="Hesitation, misfires, poor idle, smoke, MPG changes, lack of power, DPF/EGR issues, etc."></textarea>
+                <label class="form-label" for="message"
+                  >Describe the symptoms or what you’re looking for</label
+                >
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Hesitation, misfires, poor idle, smoke, MPG changes, lack of power, DPF/EGR issues, etc."
+                ></textarea>
               </div>
 
               <div class="form-footer">
@@ -2443,8 +2602,8 @@
                   <span>Send booking request</span>
                 </button>
                 <p class="form-hint">
-                  We’ll get back to you as soon as possible during opening hours. Your details are only used to respond to
-                  your enquiry.
+                  We’ll get back to you as soon as possible during opening hours. Your details are
+                  only used to respond to your enquiry.
                 </p>
               </div>
             </form>
@@ -2467,8 +2626,8 @@
                 <iframe
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps?q=Unit+F,+Leona+Trading+Estate,+Nimmings+Road,+Halesowen,+B62+9JQ&output=embed">
-                </iframe>
+                  src="https://www.google.com/maps?q=Unit+F,+Leona+Trading+Estate,+Nimmings+Road,+Halesowen,+B62+9JQ&output=embed"
+                ></iframe>
               </div>
             </div>
 
@@ -2482,25 +2641,37 @@
             <div class="contact-row">
               <div class="contact-label">Opening hours</div>
               <div class="contact-hours-grid">
-                <div>Mon–Fri</div><div>09:00 – 18:00</div>
-                <div>Saturday</div><div>By appointment</div>
-                <div>Sunday</div><div>Closed</div>
+                <div>Mon–Fri</div>
+                <div>09:00 – 18:00</div>
+                <div>Saturday</div>
+                <div>By appointment</div>
+                <div>Sunday</div>
+                <div>Closed</div>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-label">Visits</div>
+              <div>
+                Visits are <strong>strictly by appointment only</strong>. Please request a booking
+                or call in advance before coming to the workshop.
               </div>
             </div>
 
             <div class="contact-row">
               <div class="contact-label">Areas served</div>
               <div>
-                Halesowen, Stourbridge, Dudley, Birmingham, Bromsgrove, Kidderminster and surrounding West Midlands areas.
+                Halesowen, Stourbridge, Dudley, Birmingham, Bromsgrove, Kidderminster and the wider
+                West Midlands.
               </div>
             </div>
 
             <div class="contact-row">
               <div class="contact-label">Best way to book</div>
               <div>
-                Send your registration, mileage and symptoms via the form, or call/WhatsApp us on
-                <strong>078-3382-3384</strong>. We’ll confirm whether walnut blasting, diesel intake cleaning or injector
-                cleaning (or a mix) is the right approach and offer dates that work for you.
+                Send your registration, mileage and symptoms via the form, or call the garage during
+                opening hours. We’ll confirm whether walnut blasting, diesel intake/EGR cleaning or
+                injector cleaning (or a mix) is the right approach and offer dates that work for you.
               </div>
             </div>
           </aside>
@@ -2511,7 +2682,10 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© <span id="year"></span> Walnut Blasting Halesowen • Kovacs Services Ltd. All rights reserved.</div>
+        <div>
+          © <span id="year"></span> Walnut Blasting Halesowen • Kovacs Services Ltd. All rights
+          reserved.
+        </div>
         <div class="footer-links">
           <a href="#top">Back to top</a>
           <a href="#what">What we do</a>
@@ -2560,9 +2734,10 @@
         const target = document.querySelector(targetId);
         if (target) {
           e.preventDefault();
-          const offset = 80;
+          const offset = 80; // header height
           const rect = target.getBoundingClientRect();
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
           const targetPosition = rect.top + scrollTop - offset;
 
           window.scrollTo({
@@ -2574,7 +2749,8 @@
     });
 
     // Year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
 </body>
 </html>
