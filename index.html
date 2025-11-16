@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Walnut Blasting Halesowen | Kovac Services Ltd</title>
+  <title>Walnut Blasting Halesowen | Kovac Services Ltd – Intake Valve & Carbon Cleaning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="Kovac Services Ltd in Halesowen specialise in walnut blasting of intake valves and ports for petrol and diesel engines. Safe, effective carbon removal with optional intake manifold, EGR and injector ultrasonic cleaning. Visits strictly by appointment only." />
+        content="Kovac Services Ltd in Halesowen specialises in walnut blasting of intake valves & ports for petrol and diesel engines. Main service: intake valve blasting, with add-ons for manifolds, EGR cleaning and ultrasonic injector cleaning." />
   <meta name="robots" content="index,follow" />
 
-  <!-- Optional Google Font -->
+  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -23,12 +23,11 @@
       --accent-strong: #ea580c;
       --text-main: #111827;
       --text-soft: #4b5563;
-      --text-muted: #9ca3af;
+      --text-muted: #6b7280;
       --border-subtle: #e5e7eb;
       --radius-lg: 1.25rem;
       --radius-pill: 999px;
-      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.12);
-      --shadow-card: 0 18px 45px rgba(15, 23, 42, 0.16);
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
       --transition-fast: 0.18s ease-out;
     }
 
@@ -36,12 +35,11 @@
       box-sizing: border-box;
     }
 
-    html,
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #f9fafb 0, #edf2ff 32%, #f3f4f6 70%, #e5e7eb 100%);
+      background: radial-gradient(circle at top, #e5e7eb 0, #f3f4f6 40%, #e5e7eb 100%);
       color: var(--text-main);
       scroll-behavior: smooth;
     }
@@ -51,14 +49,14 @@
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
     img {
       max-width: 100%;
       display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     .page-wrapper {
@@ -69,61 +67,57 @@
 
     .container {
       width: 100%;
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 0 1.75rem;
+      padding: 0 1.25rem;
     }
 
-    /* Header / Navigation */
+    main {
+      flex: 1;
+    }
 
+    /* Header & navigation */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 40;
       backdrop-filter: blur(18px);
-      background: rgba(249, 250, 251, 0.94);
-      border-bottom: 1px solid rgba(229, 231, 235, 0.9);
+      background: rgba(243, 244, 246, 0.92);
+      border-bottom: 1px solid rgba(209, 213, 219, 0.9);
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.75rem 0;
       gap: 1.5rem;
+      padding: 0.7rem 0;
     }
 
     .nav-left {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      min-width: 0;
+      gap: 0.8rem;
     }
 
     .logo-mark {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border-radius: 1rem;
-      background: radial-gradient(circle at 20% 0, #f97316 0, #ea580c 36%, #b91c1c 80%);
-      border: 2px solid #fef3c7;
-      box-shadow: 0 12px 28px rgba(248, 113, 22, 0.55);
+      background: radial-gradient(circle at 20% 0, #f97316 0, #ea580c 26%, #7c2d12 80%);
+      border: 1px solid rgba(248, 250, 252, 0.7);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.28);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
       font-size: 1rem;
-      color: #111827;
-    }
-
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      white-space: nowrap;
+      color: #f9fafb;
     }
 
     .logo-text-main {
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.08em;
       font-size: 0.95rem;
       text-transform: uppercase;
     }
@@ -133,62 +127,82 @@
       color: var(--text-muted);
     }
 
-    .nav-links {
+    .nav-center {
       display: flex;
-      align-items: center;
-      gap: 0.6rem;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      gap: 0.55rem;
+      justify-content: center;
     }
 
     .nav-pill {
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: transparent;
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 72px;
-      padding: 0.35rem 0.9rem;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(209, 213, 219, 0.95);
-      background: rgba(243, 244, 246, 0.9);
-      color: var(--text-soft);
-      font-size: 0.82rem;
-      font-weight: 500;
-      transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        color var(--transition-fast),
-        transform var(--transition-fast),
-        box-shadow var(--transition-fast);
+      min-width: 80px;
     }
 
     .nav-pill:hover {
-      background: #111827;
-      color: #f9fafb;
-      border-color: #111827;
+      background: #ffffff;
+      color: var(--text-main);
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
       transform: translateY(-1px);
-      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+      border-color: rgba(209, 213, 219, 0.9);
     }
 
-    .nav-pill--primary {
+    .nav-pill.active {
       background: #111827;
       color: #f9fafb;
       border-color: #111827;
-      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.28);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
     }
 
-    .nav-pill--primary:hover {
-      background: #020617;
-      border-color: #020617;
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-call {
+      padding: 0.55rem 1.3rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: radial-gradient(circle at 0 0, #fed7aa 0, #f97316 40%, #ea580c 100%);
+      color: #111827;
+      font-weight: 600;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.35);
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+    }
+
+    .nav-call span:first-child {
+      font-size: 1rem;
+    }
+
+    .nav-call:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.03);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.4);
     }
 
     .nav-toggle {
       display: none;
-      width: 38px;
-      height: 38px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(209, 213, 219, 0.9);
-      background: #111827;
-      color: #f9fafb;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
       align-items: center;
       justify-content: center;
       cursor: pointer;
@@ -197,9 +211,10 @@
     .nav-toggle-line {
       width: 18px;
       height: 2px;
+      background: #111827;
       border-radius: 999px;
-      background: currentColor;
       position: relative;
+      transition: transform 0.2s ease-out, background 0.2s ease-out;
     }
 
     .nav-toggle-line::before,
@@ -209,190 +224,170 @@
       left: 0;
       width: 18px;
       height: 2px;
-      border-radius: inherit;
       background: inherit;
+      border-radius: 999px;
+      transition: transform 0.18s ease-out, opacity 0.18s ease-out, top 0.18s ease-out;
     }
 
-    .nav-toggle-line::before {
-      top: -5px;
+    .nav-toggle-line::before { top: -5px; }
+    .nav-toggle-line::after { top: 5px; }
+
+    .nav-toggle.active .nav-toggle-line {
+      transform: rotate(45deg);
     }
 
-    .nav-toggle-line::after {
-      top: 5px;
+    .nav-toggle.active .nav-toggle-line::before {
+      transform: rotate(-90deg);
+      top: 0;
     }
 
-    .nav-links-mobile {
+    .nav-toggle.active .nav-toggle-line::after {
+      opacity: 0;
+    }
+
+    .nav-center-mobile {
       display: none;
       flex-direction: column;
-      gap: 0.45rem;
-      padding: 0.75rem 0 0.9rem;
+      gap: 0.4rem;
+      padding: 0.7rem 0 0.9rem;
     }
 
-    .nav-links-mobile a {
-      padding: 0.45rem 0.75rem;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(229, 231, 235, 0.9);
-      background: #f3f4f6;
-      font-size: 0.85rem;
-      color: var(--text-soft);
+    .nav-center-mobile .nav-pill {
+      width: 100%;
+      justify-content: flex-start;
     }
 
-    .nav-links-mobile a:hover {
-      background: #111827;
-      color: #f9fafb;
-    }
-
-    .nav-links-mobile.show {
+    .nav-center-mobile.show {
       display: flex;
     }
 
     /* Hero */
-
     .hero {
-      padding: 2.9rem 0 3rem;
+      padding: 2.6rem 0 3.2rem;
     }
 
     .hero-inner {
       display: grid;
       grid-template-columns: minmax(0, 6.5fr) minmax(0, 5.5fr);
-      gap: 2.5rem;
+      gap: 2.4rem;
       align-items: center;
-    }
-
-    .hero-left {
-      position: relative;
     }
 
     .hero-kicker {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.2rem 0.6rem 0.2rem 0.3rem;
-      border-radius: var(--radius-pill);
-      background: #e0f2fe;
-      border: 1px solid #bae6fd;
-      color: #0369a1;
-      font-size: 0.75rem;
-      margin-bottom: 0.85rem;
+      gap: 0.45rem;
+      padding: 0.2rem 0.9rem 0.2rem 0.3rem;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      margin-bottom: 0.9rem;
+      font-size: 0.78rem;
+      color: #1d4ed8;
     }
 
-    .hero-kicker-badge {
-      padding: 0.15rem 0.55rem;
-      border-radius: var(--radius-pill);
-      background: #0ea5e9;
-      color: #ecfeff;
+    .hero-kicker span:first-child {
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background: #1d4ed8;
+      color: #eff6ff;
       font-weight: 600;
-      font-size: 0.7rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.13em;
+      font-size: 0.7rem;
     }
 
     .hero-title {
-      font-size: clamp(2.2rem, 3vw + 1.4rem, 3.1rem);
-      margin: 0 0 0.5rem;
-      letter-spacing: -0.04em;
+      font-size: clamp(2.2rem, 2.7vw + 1.5rem, 3rem);
+      margin: 0 0 0.7rem;
+      letter-spacing: -0.03em;
     }
 
     .hero-title span.highlight {
-      color: #f97316;
+      color: #ea580c;
     }
 
     .hero-subtitle {
-      font-size: 1rem;
+      font-size: 0.98rem;
       color: var(--text-soft);
       max-width: 36rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
     }
 
     .hero-bullets {
-      margin: 0 0 1.4rem;
-      padding: 0;
-      list-style: none;
       font-size: 0.9rem;
       color: var(--text-soft);
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-bullets ul {
+      margin: 0.35rem 0 0;
+      padding-left: 1.1rem;
     }
 
     .hero-bullets li {
-      display: flex;
-      gap: 0.55rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .hero-bullet-icon {
-      font-size: 1rem;
-      line-height: 1.2;
+      margin-bottom: 0.2rem;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1rem;
     }
 
     .btn-primary {
       padding: 0.6rem 1.4rem;
       border-radius: var(--radius-pill);
       border: none;
-      background: linear-gradient(135deg, #f97316, #facc15);
+      background: radial-gradient(circle at 0 0, #fed7aa 0, #f97316 40%, #ea580c 100%);
       color: #111827;
       font-weight: 600;
       font-size: 0.9rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
       cursor: pointer;
-      box-shadow: 0 16px 40px rgba(248, 113, 22, 0.5);
-      transition:
-        transform var(--transition-fast),
-        box-shadow var(--transition-fast),
-        filter var(--transition-fast);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.35);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
     }
 
-    .btn-primary span.icon {
-      font-size: 1.2rem;
+    .btn-primary span:first-child {
+      font-size: 1rem;
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
       filter: brightness(1.05);
-      box-shadow: 0 22px 50px rgba(248, 113, 22, 0.65);
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.4);
     }
 
     .btn-ghost {
-      padding: 0.6rem 1.25rem;
+      padding: 0.6rem 1.2rem;
       border-radius: var(--radius-pill);
-      border: 1px solid rgba(209, 213, 219, 0.95);
-      background: rgba(255, 255, 255, 0.9);
-      color: var(--text-soft);
+      border: 1px solid #d1d5db;
+      background: #ffffff;
       font-size: 0.9rem;
+      color: var(--text-soft);
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.45rem;
       cursor: pointer;
-      transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        color var(--transition-fast),
-        transform var(--transition-fast),
-        box-shadow var(--transition-fast);
+      transition: var(--transition-fast);
     }
 
     .btn-ghost:hover {
-      background: #111827;
-      color: #f9fafb;
-      border-color: #111827;
+      border-color: #9ca3af;
+      color: var(--text-main);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
       transform: translateY(-1px);
-      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.25);
     }
 
     .hero-note {
       font-size: 0.82rem;
       color: var(--text-muted);
-      max-width: 30rem;
+      max-width: 32rem;
     }
-
-    /* Hero right: image card */
 
     .hero-right {
       position: relative;
@@ -400,212 +395,224 @@
 
     .hero-image-card {
       background: var(--bg-card);
-      border-radius: 1.5rem;
-      border: 1px solid rgba(209, 213, 219, 0.9);
-      box-shadow: var(--shadow-card);
-      padding: 1.2rem;
-      position: relative;
+      border-radius: 1.75rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 0.9rem;
     }
 
     .hero-image-inner {
-      border-radius: 1.1rem;
-      border: 1px dashed #d1d5db;
-      background: radial-gradient(circle at top, #e5f3ff 0, #e5e7eb 30%, #e5e7eb 100%);
-      min-height: 260px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 1rem;
-      color: var(--text-soft);
-      font-size: 0.9rem;
+      border-radius: 1.35rem;
+      overflow: hidden;
+      background: #111827;
     }
 
-    .hero-image-inner strong {
+    .hero-image-inner img {
+      width: 100%;
+      height: auto;
       display: block;
-      margin-bottom: 0.25rem;
-      color: var(--text-main);
     }
 
     /* Sections base */
-
-    main {
-      flex: 1;
-    }
-
     section {
-      padding: 3rem 0 3rem;
+      padding: 3.2rem 0 3rem;
     }
 
     .section-header {
-      max-width: 40rem;
-      margin-bottom: 1.8rem;
+      max-width: 44rem;
+      margin-bottom: 2rem;
     }
 
     .section-kicker {
-      font-size: 0.79rem;
+      font-size: 0.78rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.25rem;
     }
 
     .section-title {
-      font-size: 1.7rem;
-      margin: 0 0 0.45rem;
+      font-size: 1.6rem;
+      margin: 0 0 0.5rem;
     }
 
     .section-description {
-      font-size: 0.96rem;
-      color: var(--text-soft);
       margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-soft);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 6.5fr) minmax(0, 5.5fr);
+      gap: 2.4rem;
+      align-items: flex-start;
     }
 
     .card {
       border-radius: var(--radius-lg);
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
-      padding: 1.6rem 1.5rem;
       box-shadow: var(--shadow-soft);
+      padding: 1.7rem 1.6rem;
+      font-size: 0.9rem;
     }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: minmax(0, 6.5fr) minmax(0, 5.5fr);
-      gap: 2.25rem;
-      align-items: flex-start;
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.45rem;
+      font-size: 1.02rem;
     }
-
-    /* What we do / main service & add-ons */
 
     .list-check {
       list-style: none;
       padding: 0;
-      margin: 0.9rem 0 0;
+      margin: 0.9rem 0 0.1rem;
       display: grid;
       gap: 0.55rem;
-      font-size: 0.9rem;
       color: var(--text-soft);
     }
 
     .list-check li {
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 1fr;
       align-items: flex-start;
-      gap: 0.5rem;
+      column-gap: 0.55rem;
     }
 
     .list-check-icon {
-      margin-top: 0.1rem;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
+      margin-top: 0.15rem;
     }
 
-    .list-strong {
-      font-weight: 500;
-      color: var(--text-main);
-    }
-
-    .service-main-addons {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      gap: 1.5rem;
-      margin-top: 0.3rem;
-      text-align: center;
-    }
-
-    .service-col-title {
+    .list-check-strong {
       font-weight: 600;
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .service-col-sub {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.7rem;
-    }
-
-    .service-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 0.88rem;
-      color: var(--text-soft);
-      display: grid;
-      gap: 0.3rem;
+      color: var(--text-main);
     }
 
     .pill-row {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.4rem;
-      margin-top: 0.9rem;
+      gap: 0.45rem;
+      margin-top: 1rem;
     }
 
     .pill-small {
-      padding: 0.25rem 0.7rem;
-      border-radius: var(--radius-pill);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
       border: 1px solid #e5e7eb;
       background: #f9fafb;
       font-size: 0.78rem;
       color: var(--text-muted);
     }
 
-    /* Why walnut blasting */
-
-    .highlight-box {
-      border-radius: 1rem;
-      background: #fffbeb;
-      border: 1px solid #facc15;
-      padding: 0.9rem 1rem;
-      font-size: 0.86rem;
-      color: #854d0e;
-      margin-top: 0.9rem;
-    }
-
-    .versus-grid {
+    /* Main service & add-ons */
+    .service-main-addons {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-      font-size: 0.83rem;
+      grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+      gap: 1.6rem;
+      text-align: center;
     }
 
-    .versus-card {
-      border-radius: 0.9rem;
-      border: 1px solid #e5e7eb;
-      background: #f9fafb;
-      padding: 0.9rem;
+    .service-main,
+    .service-addons {
+      padding: 1.4rem 1.2rem 1.3rem;
+      border-radius: 1.1rem;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-subtle);
     }
 
-    .versus-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      font-size: 0.9rem;
+    .service-main {
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+      border-color: #fecaca;
+      background: #fff7ed;
     }
 
-    .versus-badge-good {
-      display: inline-block;
-      margin-top: 0.35rem;
-      font-size: 0.75rem;
-      color: #166534;
-      background: #bbf7d0;
-      padding: 0.1rem 0.55rem;
-      border-radius: var(--radius-pill);
+    .service-main-title {
+      font-weight: 700;
+      font-size: 1.02rem;
+      margin-bottom: 0.2rem;
     }
 
-    .versus-badge-bad {
-      display: inline-block;
-      margin-top: 0.35rem;
-      font-size: 0.75rem;
-      color: #991b1b;
+    .service-main-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
       background: #fee2e2;
-      padding: 0.1rem 0.55rem;
-      border-radius: var(--radius-pill);
+      color: #b91c1c;
+      font-size: 0.75rem;
+      margin-bottom: 0.4rem;
     }
 
-    /* Process */
+    .service-main p,
+    .service-addons p {
+      margin: 0.3rem 0 0.3rem;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
 
+    .service-addons-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .service-addons ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.3rem 0 0;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .service-addons li {
+      margin-bottom: 0.2rem;
+    }
+
+    /* Why walnut blasting vs other methods */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 6.5fr) minmax(0, 5.5fr);
+      gap: 2.2rem;
+      align-items: flex-start;
+    }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+
+    .compare-table th,
+    .compare-table td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 0.55rem;
+    }
+
+    .compare-table th {
+      background: #f9fafb;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .compare-table td strong {
+      font-weight: 600;
+    }
+
+    .compare-good {
+      color: #16a34a;
+      font-weight: 600;
+    }
+
+    .compare-bad {
+      color: #b91c1c;
+      font-weight: 600;
+    }
+
+    /* Process cards */
     .process-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -614,77 +621,82 @@
     }
 
     .process-step {
-      border-radius: 1rem;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
-      padding: 1rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      border-radius: 1.1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 1rem 1rem 0.95rem;
     }
 
-    .process-number {
-      width: 26px;
-      height: 26px;
-      border-radius: var(--radius-pill);
-      border: 1px solid #d1d5db;
+    .process-step-number {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: #111827;
+      color: #f9fafb;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-size: 0.8rem;
       margin-bottom: 0.4rem;
-      background: #f9fafb;
     }
 
-    .process-title {
+    .process-step-title {
       font-weight: 600;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.2rem;
     }
 
-    .process-time {
+    .process-step-time {
       font-size: 0.78rem;
       color: var(--text-muted);
       margin-bottom: 0.35rem;
     }
 
     /* Pricing */
-
     .pricing-grid {
       display: grid;
-      grid-template-columns: minmax(0, 6.7fr) minmax(0, 5.3fr);
-      gap: 2.25rem;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: 2rem;
     }
 
     .pricing-table {
       border-radius: 1.2rem;
-      border: 1px solid #e5e7eb;
       background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-soft);
-      overflow: hidden;
       font-size: 0.86rem;
+      overflow: hidden;
     }
 
     .pricing-header {
-      padding: 0.9rem 1rem;
-      background: linear-gradient(90deg, #ffedd5, #fefce8);
-      border-bottom: 1px solid #fed7aa;
+      padding: 0.9rem 1.1rem;
+      background: linear-gradient(90deg, #fef3c7, #fffbeb);
+      border-bottom: 1px solid #fde68a;
       display: flex;
       justify-content: space-between;
       gap: 1rem;
+      align-items: center;
     }
 
     .pricing-header-title {
       font-weight: 600;
-      font-size: 0.96rem;
+      font-size: 0.95rem;
+    }
+
+    .pricing-header-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
     }
 
     .pricing-body {
-      padding: 0.75rem 1rem 0.95rem;
+      padding: 0.7rem 1.1rem 0.9rem;
     }
 
     .pricing-row {
       display: grid;
-      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr) minmax(0, 2.1fr);
-      gap: 0.7rem;
-      padding: 0.55rem 0.1rem;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.1fr) minmax(0, 2.4fr);
+      gap: 0.75rem;
+      padding: 0.5rem 0;
       border-bottom: 1px dashed #e5e7eb;
       align-items: center;
     }
@@ -695,11 +707,11 @@
 
     .pricing-name {
       font-weight: 500;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
     }
 
-    .pricing-sub {
-      font-size: 0.8rem;
+    .pricing-name-sub {
+      font-size: 0.78rem;
       color: var(--text-muted);
     }
 
@@ -713,48 +725,49 @@
       color: var(--text-soft);
     }
 
-    .pricing-side {
+    .pricing-sidebar {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      font-size: 0.85rem;
     }
 
     .pricing-highlight {
-      border-radius: 1.1rem;
+      border-radius: 1.2rem;
+      padding: 1.1rem 1.1rem 1rem;
       background: #fff7ed;
       border: 1px solid #fed7aa;
-      padding: 1rem 1.05rem;
-      font-size: 0.86rem;
+      box-shadow: var(--shadow-soft);
     }
 
-    .pricing-highlight strong {
-      display: block;
-      margin-bottom: 0.2rem;
+    .pricing-highlight-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
     }
 
-    .pricing-note {
-      font-size: 0.8rem;
-      color: var(--text-muted);
+    .pricing-highlight-tag {
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      color: #c2410c;
     }
 
     /* Before & after gallery */
-
     .ba-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1.1rem;
+      gap: 1.2rem;
     }
 
     .ba-card {
-      border-radius: 1rem;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
-      padding: 0.8rem;
-      font-size: 0.83rem;
+      border-radius: 1.2rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 0.9rem 0.9rem 0.85rem;
+      font-size: 0.84rem;
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
-      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+      gap: 0.5rem;
     }
 
     .ba-title {
@@ -763,35 +776,38 @@
     }
 
     .ba-image {
-      border-radius: 0.8rem;
-      border: 1px dashed #d1d5db;
-      background: radial-gradient(circle at top, #e5f3ff 0, #e5e7eb 40%, #e5e7eb 100%);
-      min-height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0.8rem;
-      color: var(--text-muted);
-      font-size: 0.8rem;
+      border-radius: 0.9rem;
+      overflow: hidden;
+      background: #111827;
+      margin-top: 0.2rem;
     }
 
-    /* Contact */
+    .ba-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
+    .ba-caption {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    /* Contact / booking */
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 6.7fr) minmax(0, 5.3fr);
-      gap: 2rem;
+      grid-template-columns: minmax(0, 6.2fr) minmax(0, 5.8fr);
+      gap: 2.3rem;
       align-items: flex-start;
     }
 
     .contact-form-card {
-      border-radius: 1.2rem;
-      border: 1px solid #e5e7eb;
+      border-radius: 1.3rem;
       background: var(--bg-card);
-      padding: 1.5rem 1.45rem 1.25rem;
+      border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-soft);
-      font-size: 0.88rem;
+      padding: 1.5rem 1.5rem 1.3rem;
+      font-size: 0.86rem;
     }
 
     .form-row {
@@ -809,12 +825,12 @@
     }
 
     .form-label {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-soft);
     }
 
     .form-required {
-      color: #ef4444;
+      color: #dc2626;
     }
 
     .form-control,
@@ -824,14 +840,14 @@
       border: 1px solid #d1d5db;
       background: #f9fafb;
       color: var(--text-main);
-      padding: 0.55rem 0.65rem;
+      padding: 0.5rem 0.6rem;
       font-size: 0.86rem;
       outline: none;
       min-height: 38px;
     }
 
     .form-textarea {
-      min-height: 100px;
+      min-height: 90px;
       resize: vertical;
     }
 
@@ -839,7 +855,7 @@
     .form-select:focus,
     .form-textarea:focus {
       border-color: #f97316;
-      box-shadow: 0 0 0 1px #fed7aa;
+      box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.7);
       background: #ffffff;
     }
 
@@ -849,69 +865,72 @@
       align-items: center;
       justify-content: space-between;
       gap: 0.7rem;
-      margin-top: 0.6rem;
+      margin-top: 0.4rem;
     }
 
     .form-hint {
       font-size: 0.78rem;
       color: var(--text-muted);
-      max-width: 19rem;
     }
 
-    .contact-card {
-      border-radius: 1.2rem;
-      border: 1px solid #e5e7eb;
+    .contact-info-card {
+      border-radius: 1.3rem;
       background: var(--bg-card);
-      padding: 1.4rem 1.35rem 1.2rem;
+      border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-soft);
+      padding: 1.4rem 1.35rem 1.2rem;
       font-size: 0.86rem;
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
     }
 
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
     .contact-label {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
     }
 
     .contact-value {
       font-weight: 600;
-      margin-bottom: 0.15rem;
     }
 
-    .contact-map {
-      margin-top: 0.55rem;
-      border-radius: 1rem;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-    }
-
-    .contact-warning {
-      margin-top: 0.5rem;
+    .contact-map iframe {
+      width: 100%;
+      height: 240px;
+      border: 0;
       border-radius: 0.9rem;
-      border: 1px solid #fecaca;
+    }
+
+    .contact-alert {
+      margin-top: 0.4rem;
+      border-radius: 0.9rem;
+      padding: 0.55rem 0.7rem;
       background: #fef2f2;
-      padding: 0.6rem 0.75rem;
+      border: 1px solid #fecaca;
       font-size: 0.8rem;
-      color: #991b1b;
+      color: #b91c1c;
     }
 
     .contact-hours-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.6fr);
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr);
       gap: 0.25rem;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
     }
 
     /* Footer */
-
     .site-footer {
+      padding: 1.4rem 0 1.2rem;
       border-top: 1px solid #e5e7eb;
-      padding: 1.2rem 0 1rem;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
-      background: rgba(249, 250, 251, 0.9);
+      background: #f9fafb;
     }
 
     .footer-inner {
@@ -919,7 +938,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 0.7rem;
+      gap: 0.8rem;
     }
 
     .footer-links {
@@ -933,58 +952,73 @@
     }
 
     /* Responsive */
-
     @media (max-width: 1024px) {
       .hero-inner,
       .grid-2,
+      .two-col,
       .pricing-grid,
       .contact-grid {
         grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-inner {
+        gap: 2.1rem;
       }
 
       .hero-right {
         order: -1;
       }
 
-      .process-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
       .ba-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .nav-links {
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .pricing-row {
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+        grid-template-rows: auto auto;
+      }
+
+      .pricing-meta {
+        grid-column: 1 / -1;
+      }
+
+      .nav-center {
         display: none;
       }
 
       .nav-toggle {
-        display: inline-flex;
+        display: flex;
       }
     }
 
     @media (max-width: 720px) {
-      .container {
-        padding-inline: 1.1rem;
-      }
-
       section {
         padding-inline: 0;
       }
 
+      .container {
+        padding-inline: 1rem;
+      }
+
+      .ba-grid,
       .process-grid {
         grid-template-columns: minmax(0, 1fr);
       }
 
-      .ba-grid {
+      .service-main-addons {
         grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contact-form-card,
+      .contact-info-card {
+        padding-inline: 1.1rem;
       }
 
       .form-row {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .service-main-addons {
         grid-template-columns: minmax(0, 1fr);
       }
     }
@@ -992,22 +1026,20 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header class="site-header">
       <div class="container">
         <nav class="nav">
           <div class="nav-left">
-            <div class="logo-mark">
-              <span>WB</span>
-            </div>
-            <div class="logo-text">
-              <span class="logo-text-main">Walnut Blasting</span>
-              <span class="logo-text-sub">Halesowen intake valve &amp; carbon cleaning</span>
+            <div class="logo-mark">WB</div>
+            <div>
+              <div class="logo-text-main">Walnut Blasting</div>
+              <div class="logo-text-sub">Halesowen intake valve &amp; carbon cleaning</div>
             </div>
           </div>
 
-          <div class="nav-links">
-            <a href="#top" class="nav-pill nav-pill--primary">Home</a>
+          <div class="nav-center">
+            <a href="#top" class="nav-pill active">Home</a>
             <a href="#what-we-do" class="nav-pill">What we do</a>
             <a href="#why-walnut" class="nav-pill">Why walnut blasting</a>
             <a href="#process" class="nav-pill">Process</a>
@@ -1016,615 +1048,668 @@
             <a href="#contact" class="nav-pill">Bookings &amp; contact</a>
           </div>
 
-          <button class="nav-toggle" type="button" aria-label="Toggle navigation">
-            <div class="nav-toggle-line"></div>
-          </button>
+          <div class="nav-right">
+            <a href="tel:07833823384" class="nav-call">
+              <span>📞</span>
+              <span>Call 0783 382 3384</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+              <div class="nav-toggle-line"></div>
+            </button>
+          </div>
         </nav>
 
-        <div class="nav-links-mobile" id="mobileNav">
-          <a href="#top">Home</a>
-          <a href="#what-we-do">What we do</a>
-          <a href="#why-walnut">Why walnut blasting</a>
-          <a href="#process">Process</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#before-after">Before &amp; after</a>
-          <a href="#contact">Bookings &amp; contact</a>
+        <div class="nav-center-mobile" id="mobileNav">
+          <a href="#top" class="nav-pill active">Home</a>
+          <a href="#what-we-do" class="nav-pill">What we do</a>
+          <a href="#why-walnut" class="nav-pill">Why walnut blasting</a>
+          <a href="#process" class="nav-pill">Process</a>
+          <a href="#pricing" class="nav-pill">Pricing</a>
+          <a href="#before-after" class="nav-pill">Before &amp; after</a>
+          <a href="#contact" class="nav-pill">Bookings &amp; contact</a>
         </div>
       </div>
     </header>
 
     <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="container hero-inner">
-        <div class="hero-left">
-          <div class="hero-kicker">
-            <span class="hero-kicker-badge">Halesowen</span>
-            <span>Specialist walnut blasting for intake valves &amp; ports</span>
-          </div>
-
-          <h1 class="hero-title">
-            Restore lost power with <span class="highlight">proper walnut blasting</span> in Halesowen.
-          </h1>
-
-          <p class="hero-subtitle">
-            Kovac Services Ltd specialise in walnut blasting of cylinder ports and intake valves – the safest and most effective
-            way to remove heavy carbon build-up on modern petrol and diesel engines.
-          </p>
-
-          <ul class="hero-bullets">
-            <li>
-              <span class="hero-bullet-icon">✅</span>
-              <span>Main service: intake valve &amp; port walnut blasting with full manifold removal and correct valve positioning.</span>
-            </li>
-            <li>
-              <span class="hero-bullet-icon">🔧</span>
-              <span>Add-ons such as intake manifold &amp; EGR cleaning and <strong>ultrasonic injector cleaning</strong> can be combined in the same visit.</span>
-            </li>
-            <li>
-              <span class="hero-bullet-icon">⏱</span>
-              <span>Typical turnaround: <strong>next working day</strong> (24 hours) to allow for stubborn fixings or front-end removal on tighter engines.</span>
-            </li>
-          </ul>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn-primary">
-              <span class="icon">📅</span>
-              <span>Request walnut blasting quote</span>
-            </a>
-            <a href="#pricing" class="btn-ghost">
-              <span>💷</span>
-              <span>View guide pricing</span>
-            </a>
-          </div>
-
-          <p class="hero-note">
-            Tell us your registration, mileage and symptoms – we’ll confirm whether walnut blasting is the right solution for
-            <em>your</em> engine, not just sell you a treatment.
-          </p>
-        </div>
-
-        <aside class="hero-right">
-          <div class="hero-image-card">
-            <div class="hero-image-inner">
-              <div>
-                <strong>Before &amp; after image area</strong>
-                <span>
-                  This space is reserved for your own high-quality before/after walnut blasting photo. Replace this box with an
-                  intake valve or port comparison when you’re ready.
-                </span>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- What we do / main service & add-ons -->
-    <section id="what-we-do">
-      <div class="container">
-        <div class="grid-2">
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-inner">
           <div>
-            <div class="section-header">
-              <div class="section-kicker">What we do</div>
-              <h2 class="section-title">Walnut blasting done properly – not a “quick clean” gimmick</h2>
-              <p class="section-description">
-                On modern direct-injection engines, fuel is injected straight into the combustion chamber, not over the back of
-                the valves. Oil vapour and EGR soot stick to the valve stems and ports, slowly choking airflow and upsetting
-                mixture. Walnut blasting is the safest way to remove that carbon when performed correctly.
-              </p>
+            <div class="hero-kicker">
+              <span>Halesowen</span>
+              <span>Specialist walnut blasting for intake valves &amp; ports</span>
             </div>
 
-            <div class="card">
-              <h3 style="margin-top:0;margin-bottom:0.5rem;font-size:1rem;">How we carry out walnut blasting</h3>
-              <ul class="list-check">
-                <li>
-                  <span class="list-check-icon">✔</span>
-                  <span>
-                    <span class="list-strong">Full access, no shortcuts</span><br />
-                    Intake manifold removed so each port can be cleaned directly – we don’t just spray through the throttle
-                    body and hope for the best.
-                  </span>
-                </li>
-                <li>
-                  <span class="list-check-icon">✔</span>
-                  <span>
-                    <span class="list-strong">Valves locked closed</span><br />
-                    The engine is rotated by hand so only the cylinder being blasted has its valves closed, keeping walnut
-                    media out of the combustion chamber.
-                  </span>
-                </li>
-                <li>
-                  <span class="list-check-icon">✔</span>
-                  <span>
-                    <span class="list-strong">Controlled media &amp; extraction</span><br />
-                    Crushed walnut shell is fired at controlled pressure, with continuous vacuum extraction to lift loosened
-                    carbon out of the port.
-                  </span>
-                </li>
-                <li>
-                  <span class="list-check-icon">✔</span>
-                  <span>
-                    <span class="list-strong">Proof of work</span><br />
-                    We can provide before and after photos or borescope footage of your own valves and ports, not just stock
-                    images from the internet.
-                  </span>
-                </li>
-              </ul>
+            <h1 class="hero-title">
+              Restore lost power with <span class="highlight">proper walnut blasting</span> in Halesowen.
+            </h1>
+
+            <p class="hero-subtitle">
+              Kovac Services Ltd focuses on walnut blasting of cylinder ports and intake valves – the safest and most effective
+              way to remove heavy carbon build-up on modern engines. We also offer optional extras such as intake manifold,
+              diesel intake &amp; EGR cleaning and ultrasonic injector cleaning.
+            </p>
+
+            <div class="hero-bullets">
+              <strong>Main service:</strong> careful walnut blasting of intake valves and ports, with the manifold removed and
+              valves closed on the cylinder being treated.<br />
+              <strong>Common symptoms:</strong> hesitation, flat spots, rough idle, misfires, sluggish performance, poor MPG.
             </div>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">
+                <span>⚡</span>
+                <span>Request walnut blasting / intake cleaning quote</span>
+              </a>
+              <a href="tel:07833823384" class="btn-ghost">
+                <span>📞</span>
+                <span>Call 0783 382 3384</span>
+              </a>
+            </div>
+
+            <p class="hero-note">
+              Tell us your registration, mileage and symptoms – we’ll confirm whether walnut blasting is the right solution for
+              your engine, rather than just selling you a generic “carbon clean”.
+            </p>
           </div>
 
-          <div>
-            <div class="section-header">
-              <div class="section-kicker">Main service &amp; add-ons</div>
-              <h2 class="section-title">What we offer at Kovac Services Ltd</h2>
-              <p class="section-description">
-                Walnut blasting of the intake valves and ports is the core service. Extra cleaning work can be added at the same
-                time to make the most of the strip-down.
-              </p>
-            </div>
-
-            <div class="card">
-              <div class="service-main-addons">
-                <div>
-                  <div class="service-col-title">Main walnut blasting service</div>
-                  <div class="service-col-sub">Intake valves &amp; ports – petrol &amp; diesel</div>
-                  <ul class="service-list">
-                    <li>Direct-injection petrol (TFSI, GDI, TSI, CGI, EcoBoost, etc.)</li>
-                    <li>Suitable diesel engines with heavy EGR/soot build-up in the intake</li>
-                    <li>Ideal from ~50–70k miles or sooner on tuned/short-run vehicles</li>
-                    <li>Helps restore power, smoothness and idle quality</li>
-                  </ul>
-                </div>
-                <div>
-                  <div class="service-col-title">Popular add-ons</div>
-                  <div class="service-col-sub">Completed during the same visit</div>
-                  <ul class="service-list">
-                    <li>Intake manifold removal, deep cleaning &amp; refit</li>
-                    <li>EGR valve &amp; EGR passage cleaning where accessible</li>
-                    <li>Throttle body cleaning &amp; adaptation (where supported)</li>
-                    <li><strong>Ultrasonic injector cleaning</strong> – add for <strong>£99</strong> when booked with walnut blasting</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="pill-row">
-                <span class="pill-small">Direct-injection petrol</span>
-                <span class="pill-small">Selected diesel intake &amp; EGR systems</span>
-                <span class="pill-small">Performance &amp; daily drivers</span>
-                <span class="pill-small">Honest advice before we start</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why walnut blasting -->
-    <section id="why-walnut">
-      <div class="container">
-        <div class="grid-2">
-          <div>
-            <div class="section-header">
-              <div class="section-kicker">Why walnut blasting</div>
-              <h2 class="section-title">Why this method beats sprays, additives and HHO “carbon cleans”</h2>
-              <p class="section-description">
-                The internet is full of miracle carbon cleaners – fuel additives, chemical sprays, even HHO machines claiming to
-                “steam clean” your engine. They may shift light combustion deposits, but they cannot physically remove the heavy,
-                baked-on carbon you see on intake valves and in EGR/intake tracts.
-              </p>
-            </div>
-
-            <div class="highlight-box">
-              <strong>Walnut blasting is both <em>mechanical</em> and <em>targeted</em>.</strong>
-              Crushed walnut shells gently hit the carbon from close range and break it away from the metal, while the valves are
-              safely closed. Done correctly, it’s one of the safest and most effective ways to remove heavy intake deposits
-              without damaging components.
-            </div>
-          </div>
-
-          <div>
-            <div class="section-header">
-              <div class="section-kicker">Comparison</div>
-              <h2 class="section-title">Walnut blasting vs other “carbon cleaning” methods</h2>
-              <p class="section-description">
-                Here’s how walnut blasting compares to common alternatives currently on the market.
-              </p>
-            </div>
-
-            <div class="versus-grid">
-              <div class="versus-card">
-                <div class="versus-title">Walnut blasting</div>
-                <p>
-                  Physically removes heavy carbon from valves, ports and some intake/EGR areas. Safe for metal surfaces when
-                  used at the correct pressure with valves closed and extraction in place.
-                </p>
-                <span class="versus-badge-good">✔ Safest &amp; most effective for heavy build-up</span>
-              </div>
-              <div class="versus-card">
-                <div class="versus-title">HHO / hydrogen carbon cleaning</div>
-                <p>
-                  Gasses are fed through the intake while the engine runs. Can help with light combustion deposits but has very
-                  limited effect on thick carbon stuck upstream of the combustion chamber – especially on intake valves of
-                  direct-injection engines.
-                </p>
-                <span class="versus-badge-bad">✘ Limited effect where the real problem is</span>
-              </div>
-              <div class="versus-card">
-                <div class="versus-title">Sprays &amp; fuel additives</div>
-                <p>
-                  Additives in the tank or aerosol sprays into the intake may tidy light residues, but they can’t reach or scrub
-                  baked deposits on the back of the valves. In some cases they risk dislodging chunks of carbon with nowhere
-                  safe to go.
-                </p>
-                <span class="versus-badge-bad">✘ Not a solution for serious build-up</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section id="process">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Process</div>
-          <h2 class="section-title">Our walnut blasting process – step by step</h2>
-          <p class="section-description">
-            Every car is a little different, especially when front-end removal or extra diagnostics are involved, but the overall
-            flow of the job is consistent.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-step">
-            <div class="process-number">1</div>
-            <div class="process-title">Pre-check &amp; diagnostics</div>
-            <div class="process-time">30–45 minutes</div>
-            <div>
-              We confirm the engine code, mileage and symptoms, then run a diagnostic scan. If there are other causes for poor
-              running (coils, injectors, timing, wiring), we’ll explain before recommending blasting.
-            </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number">2</div>
-            <div class="process-title">Strip-down for access</div>
-            <div class="process-time">1.5–3 hours</div>
-            <div>
-              Intake components, covers and ancillaries are removed. On some engines the front bumper and radiator pack must be
-              moved for access – this is why we usually work on a next-day turnaround.
-            </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number">3</div>
-            <div class="process-title">Walnut blasting &amp; cleaning</div>
-            <div class="process-time">1.5–3 hours</div>
-            <div>
-              Each port is cleaned with crushed walnut shell media while the valves are shut and extraction is running. If you’ve
-              booked add-ons, we clean the manifold, EGR and related parts at this stage as well.
-            </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number">4</div>
-            <div class="process-title">Injector ultrasonic cleaning (optional)</div>
-            <div class="process-time">Approx. 1 hour (overlapping)</div>
-            <div>
-              Injectors are removed, ultrasonically cleaned and flow-tested where possible. This add-on can help with fuelling
-              consistency on higher-mileage engines and is available for £99 when booked with blasting.
-            </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number">5</div>
-            <div class="process-title">Reassembly &amp; resets</div>
-            <div class="process-time">1–2 hours</div>
-            <div>
-              Everything is refitted with fresh gaskets where required. We then clear relevant codes, perform throttle/idle
-              adaptations where supported and check carefully for leaks.
-            </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number">6</div>
-            <div class="process-title">Road test &amp; aftercare</div>
-            <div class="process-time">20–30 minutes</div>
-            <div>
-              A road test confirms the engine feels as it should. We talk you through the before and after condition and offer
-              advice on oil, driving style and intervals to keep deposits under control.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Pricing</div>
-          <h2 class="section-title">Transparent guide pricing for walnut blasting</h2>
-          <p class="section-description">
-            Final quotes depend on engine code, layout, access and any add-ons you choose, but these figures give a realistic
-            idea of what to expect. All work is carried out at Kovac Services Ltd in Halesowen.
-          </p>
-        </div>
-
-        <div class="pricing-grid">
-          <div>
-            <div class="pricing-table">
-              <div class="pricing-header">
-                <div>
-                  <div class="pricing-header-title">Walnut blasting guide prices</div>
-                  <div class="pricing-note">
-                    Includes strip-down, valve &amp; port blasting, basic diagnostics and reassembly. Gaskets are charged
-                    separately at cost.
-                  </div>
-                </div>
-                <div class="pricing-note" style="text-align:right;">
-                  <div>Prices shown are <strong>from</strong>.</div>
-                  <div>Exact figure confirmed before we start.</div>
-                </div>
-              </div>
-
-              <div class="pricing-body">
-                <div class="pricing-row">
-                  <div>
-                    <div class="pricing-name">4-cylinder direct-injection engines</div>
-                    <div class="pricing-sub">Typical VAG, BMW, Mercedes, Ford EcoBoost, etc.</div>
-                  </div>
-                  <div class="pricing-price">from £379</div>
-                  <div class="pricing-meta">
-                    Core walnut blasting service for four-cylinder petrol or suitable diesel engines, plus basic manifold
-                    cleaning where appropriate. Gaskets extra.
-                  </div>
-                </div>
-
-                <div class="pricing-row">
-                  <div>
-                    <div class="pricing-name">6-cylinder direct-injection engines</div>
-                    <div class="pricing-sub">e.g. BMW N54/N55, V6 TFSI and similar</div>
-                  </div>
-                  <div class="pricing-price">from £599</div>
-                  <div class="pricing-meta">
-                    Extra time for additional cylinders, more complex access and checks. Ideal time to add manifold, EGR and
-                    injector cleaning.
-                  </div>
-                </div>
-
-                <div class="pricing-row">
-                  <div>
-                    <div class="pricing-name">8-cylinder direct-injection engines</div>
-                    <div class="pricing-sub">V8 petrol and selected diesel engines</div>
-                  </div>
-                  <div class="pricing-price">from £699</div>
-                  <div class="pricing-meta">
-                    For V8 engines where access is more involved. Pricing depends heavily on engine layout and whether front-end
-                    removal is required.
-                  </div>
-                </div>
-
-                <div class="pricing-row">
-                  <div>
-                    <div class="pricing-name">Optional add-ons</div>
-                    <div class="pricing-sub">Booked alongside walnut blasting</div>
-                  </div>
-                  <div class="pricing-price">from £XX</div>
-                  <div class="pricing-meta">
-                    Intake manifold deep clean, EGR cleaning, throttle body cleaning and <strong>ultrasonic injector
-                    cleaning</strong> (add £99 when done with blasting). We’ll itemise everything clearly on your quote.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <aside class="pricing-side">
-            <div class="pricing-highlight">
-              <strong>Typical turnaround – next working day</strong>
-              <p style="margin:0 0 0.4rem;">
-                Most jobs are completed with a <strong>next-working-day</strong> turnaround. Some engines require the front
-                bumper, crash bar or radiator pack to be moved for access, so we allow enough time to do this carefully instead
-                of rushing.
-              </p>
-              <p style="margin:0;">
-                Drop-off is usually in the morning, with collection the following working day unless otherwise agreed.
-              </p>
-            </div>
-
-            <div class="pricing-note">
-              <strong>Payment &amp; combined work</strong><br />
-              We accept major debit/credit cards and cash on collection. If you’re planning additional mechanical work (timing,
-              injectors, wiring diagnostics), we can combine jobs to save labour where possible.
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- Before & After gallery -->
-    <section id="before-after">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Before &amp; after</div>
-          <h2 class="section-title">Real-world before and after results</h2>
-          <p class="section-description">
-            Below are four slots ready for your own before/after images – for example, intake valves, ports, EGR valves and
-            intake manifolds. Simply replace the placeholders with your photos when you’re ready.
-          </p>
-        </div>
-
-        <div class="ba-grid">
-          <div class="ba-card">
-            <div class="ba-title">Intake valves – before &amp; after</div>
-            <div class="ba-image">
-              Replace with a side-by-side comparison of heavy carbon on intake valves versus fully cleaned valves after walnut
-              blasting.
-            </div>
-          </div>
-
-          <div class="ba-card">
-            <div class="ba-title">Intake ports – before &amp; after</div>
-            <div class="ba-image">
-              Replace with photos showing port walls coated in deposits versus clean, bare metal after blasting.
-            </div>
-          </div>
-
-          <div class="ba-card">
-            <div class="ba-title">EGR &amp; intake tract – before &amp; after</div>
-            <div class="ba-image">
-              Replace with images of a soot-clogged EGR passage or intake manifold compared with a cleaned version.
-            </div>
-          </div>
-
-          <div class="ba-card">
-            <div class="ba-title">Injector or manifold cleaning</div>
-            <div class="ba-image">
-              Replace with before/after shots of injectors or manifold internals following ultrasonic and manual cleaning.
-            </div>
-          </div>
-        </div>
-
-        <p style="margin-top:1.1rem;font-size:0.8rem;color:var(--text-muted);">
-          When you book, we can provide photos or video of your own engine so you can see exactly what was cleaned and how severe
-          the build-up was beforehand.
-        </p>
-      </div>
-    </section>
-
-    <!-- Bookings & contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Bookings &amp; contact</div>
-          <h2 class="section-title">Request a walnut blasting quote or booking</h2>
-          <p class="section-description">
-            Visits are <strong>strictly by appointment only</strong>. Use the form below to tell us about your engine, or contact
-            the workshop directly. We’ll respond with a clear recommendation, price and available dates.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <div>
-            <form class="contact-form-card" action="mailto:youremail@example.com" method="post" enctype="text/plain">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="name">Full name <span class="form-required">*</span></label>
-                  <input class="form-control" type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="phone">Phone number <span class="form-required">*</span></label>
-                  <input class="form-control" type="tel" id="phone" name="phone" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="email">Email address</label>
-                  <input class="form-control" type="email" id="email" name="email" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="reg">Vehicle registration <span class="form-required">*</span></label>
-                  <input class="form-control" type="text" id="reg" name="reg" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="mileage">Current mileage (approx.)</label>
-                  <input class="form-control" type="number" id="mileage" name="mileage" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="engine">Engine / model</label>
-                  <input class="form-control" type="text" id="engine" name="engine"
-                         placeholder="e.g. 2.0 TFSI, N54, 1.6 GDI, 3.0 diesel..." />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="serviceType">What are you interested in?</label>
-                <select class="form-select" id="serviceType" name="service">
-                  <option value="walnut">Walnut blasting – intake valves &amp; ports</option>
-                  <option value="walnut-plus">Walnut blasting + intake manifold clean</option>
-                  <option value="walnut-egr">Walnut blasting + intake &amp; EGR clean</option>
-                  <option value="walnut-injectors">Walnut blasting + injector ultrasonic clean</option>
-                  <option value="diagnostics">Diagnostic assessment first</option>
-                  <option value="other">Something else / not sure</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Describe the symptoms or what you’d like us to check</label>
-                <textarea class="form-textarea" id="message" name="message"
-                          placeholder="Hesitation, misfires, flat spots, poor idle, smoke, MPG changes, recent work done, etc."></textarea>
-              </div>
-
-              <div class="form-footer">
-                <button type="submit" class="btn-primary">
-                  <span class="icon">📩</span>
-                  <span>Send booking / quote request</span>
-                </button>
-                <p class="form-hint">
-                  We’ll get back to you as soon as possible during opening hours. Your details are only used to respond to your
-                  enquiry.
-                </p>
-              </div>
-            </form>
-          </div>
-
-          <aside class="contact-card">
-            <div>
-              <div class="contact-label">Garage name</div>
-              <div class="contact-value">Kovac Services Ltd – Walnut Blasting &amp; Carbon Cleaning</div>
-            </div>
-
-            <div>
-              <div class="contact-label">Garage location</div>
-              <div class="contact-value">Unit F, Leona Trading Estate, Nimmings Road, B62 9JQ, Halesowen</div>
-              <div class="contact-map">
-                <iframe
-                  src="https://www.google.com/maps?q=Unit+F,+Leona+Trading+Estate,+Nimmings+Road,+B62+9JQ&output=embed"
-                  width="100%"
-                  height="220"
-                  style="border:0;"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <div class="contact-warning">
-                Visits are <strong>strictly by appointment only</strong>. Please contact us before travelling to the workshop.
-              </div>
-            </div>
-
-            <div>
-              <div class="contact-label">Call the workshop</div>
-              <div class="contact-value">
-                <a href="tel:07833823384">0783 382 3384</a>
-              </div>
-            </div>
-
-            <div>
-              <div class="contact-label">Opening hours</div>
-              <div class="contact-hours-grid">
-                <div>Mon–Fri</div><div>09:00 – 18:00</div>
-                <div>Saturday</div><div>By appointment</div>
-                <div>Sunday</div><div>Closed</div>
-              </div>
-            </div>
-
-            <div>
-              <div class="contact-label">Areas we cover</div>
-              <div>
-                Halesowen, Stourbridge, Dudley, Birmingham, Bromsgrove, Kidderminster and surrounding West Midlands areas.
+          <aside class="hero-right" aria-label="Example before and after walnut blasting">
+            <div class="hero-image-card">
+              <div class="hero-image-inner">
+                <img src="images/Whyblast.jpg" alt="Before and after comparison of intake valves after walnut blasting" />
               </div>
             </div>
           </aside>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- What we do -->
+      <section id="what-we-do">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">What we do</div>
+            <h2 class="section-title">Walnut blasting as the main service, with sensible add-ons</h2>
+            <p class="section-description">
+              Our focus is a thorough, mechanical walnut blasting service on the intake valves and ports. From there we can add
+              sensible extras – like cleaning the intake manifold or EGR passages – where it genuinely makes sense for that
+              engine and its symptoms.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="service-main-addons">
+              <div class="service-main">
+                <div class="service-main-tag">Main service</div>
+                <div class="service-main-title">Intake valve &amp; port walnut blasting</div>
+                <p>
+                  Proper manifold-off walnut blasting of the intake valves and ports on petrol or diesel direct-injection engines.
+                  Each cylinder is set with the valves closed while blasting to keep media out of the combustion chamber.
+                </p>
+                <p>
+                  Ideal for engines suffering from hesitation, rough idle, misfires, and performance that no longer matches the
+                  original spec – especially VAG TFSI/TSI, BMW N-series, Mercedes CGI, Ford EcoBoost and similar engines.
+                </p>
+              </div>
+
+              <div class="service-addons">
+                <div class="service-addons-title">Optional add-ons (when appropriate)</div>
+                <p>
+                  These are offered as extras where it makes sense for the engine and mileage, not as upsells for the sake of
+                  it:
+                </p>
+                <ul>
+                  <li><strong>Intake manifold cleaning</strong> – removal, manual &amp; chemical cleaning, fresh gaskets.</li>
+                  <li><strong>Diesel EGR &amp; intake tract cleaning</strong> – where access and design allow.</li>
+                  <li><strong>Ultrasonic injector cleaning</strong> – add-on while the system is apart.</li>
+                  <li><strong>Diagnostic checks &amp; adaptations</strong> – before and after the clean.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pill-row">
+              <span class="pill-small">Direct-injection petrol &amp; diesel</span>
+              <span class="pill-small">TFSI / TSI / GDI / CGI / EcoBoost</span>
+              <span class="pill-small">Performance &amp; daily drivers</span>
+              <span class="pill-small">Next working day turnaround on most jobs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why walnut blasting -->
+      <section id="why-walnut">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <div class="section-header">
+                <div class="section-kicker">Why walnut blasting</div>
+                <h2 class="section-title">Why modern engines suffer from carbon build-up</h2>
+                <p class="section-description">
+                  On direct-injection engines the fuel is injected straight into the combustion chamber – not over the back of
+                  the valves like older port-injection designs. That means there is nothing to wash away oily vapour and exhaust
+                  gas recirculation deposits that cling to the intake valves and ports, slowly choking the engine.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3>Typical symptoms that improve after a proper clean</h3>
+                <ul class="list-check">
+                  <li>
+                    <span class="list-check-icon">⚡</span>
+                    <span>
+                      <span class="list-check-strong">Hesitation and flat spots</span><br />
+                      Restricted airflow and uneven mixture cause a “dead” feeling when you try to accelerate, especially from
+                      low RPM.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="list-check-icon">🛑</span>
+                    <span>
+                      <span class="list-check-strong">Rough idle and cold-start misfires</span><br />
+                      Carbon build-up disturbs airflow around the valves and can upset mixture enough to trigger misfire counts
+                      and warning lights.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="list-check-icon">⛽</span>
+                    <span>
+                      <span class="list-check-strong">Poor fuel economy</span><br />
+                      The ECU ends up adding more fuel to compensate for poor breathing, so MPG drops despite similar driving.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="list-check-icon">🏁</span>
+                    <span>
+                      <span class="list-check-strong">Performance not matching the spec</span><br />
+                      The engine no longer feels like the power figure on paper – particularly noticeable on tuned and
+                      performance models.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="section-header">
+                <div class="section-kicker">Why this method</div>
+                <h2 class="section-title">Walnut blasting vs “miracle” carbon cleaning sprays &amp; HHO machines</h2>
+                <p class="section-description">
+                  We’re often asked about HHO carbon cleaning, fuel additives and intake sprays. These methods can sometimes
+                  freshen up an engine that is already fairly clean – but they struggle to remove the thick, baked-on deposits
+                  you actually see on direct-injection intake valves.
+                </p>
+              </div>
+
+              <div class="card">
+                <table class="compare-table">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>How it works</th>
+                      <th>Risks &amp; effectiveness</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Walnut blasting (our method)</strong></td>
+                      <td>
+                        Crushed walnut shell media is blasted at the intake valves and ports with the manifold removed and the
+                        valves closed on the cylinder being worked on.
+                      </td>
+                      <td>
+                        <span class="compare-good">Safest and most effective</span> way to physically remove heavy carbon
+                        deposits from valves &amp; ports when done correctly. No harsh chemicals in the cylinders and no need
+                        to run the engine while cleaning.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>HHO &amp; “gas” carbon cleaning</td>
+                      <td>
+                        A machine feeds a gas mixture (often hydrogen/oxygen) through the intake while the engine idles, aiming
+                        to loosen deposits as it burns.
+                      </td>
+                      <td>
+                        Often <span class="compare-bad">too weak</span> to shift thick deposits on intake valves. Any material
+                        that does come loose has to go through the engine and exhaust, which isn’t ideal.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Fuel additives</td>
+                      <td>
+                        Chemicals added to the tank to clean injectors and combustion chambers as they pass through with the
+                        fuel.
+                      </td>
+                      <td>
+                        Can help <span class="compare-good">injectors &amp; combustion chambers</span>, but they never touch
+                        the back of the intake valves on direct-injection engines – exactly where the problem is.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Intake sprays / chemical soaks</td>
+                      <td>
+                        Solvents sprayed into the intake or left to soak on valves through access ports or the throttle body.
+                      </td>
+                      <td>
+                        Can soften light deposits but struggle with heavy build-up. There is a
+                        <span class="compare-bad">risk of softened lumps</span> breaking away and being ingested if not
+                        controlled.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-top:0.8rem;font-size:0.82rem;color:var(--text-soft);">
+                  Walnut blasting is currently the <strong>most controlled and consistently effective</strong> way to restore
+                  heavily carboned intake valves and ports without risking damage to engine components.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section id="process">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Process</div>
+            <h2 class="section-title">Our walnut blasting process – typically next working day turnaround</h2>
+            <p class="section-description">
+              Most jobs are completed with a next working day turnaround. Some engines require extra work – such as front
+              bumper or radiator removal for access – and we’ll discuss this when quoting.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-step">
+              <div class="process-step-number">1</div>
+              <div class="process-step-title">Initial checks &amp; diagnostics</div>
+              <div class="process-step-time">Approx. 30–45 minutes</div>
+              <div>
+                We confirm the engine code, mileage and symptoms, then run a diagnostic scan and basic checks. If we see other
+                underlying issues, we’ll explain them before any stripping begins.
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-number">2</div>
+              <div class="process-step-title">Strip-down &amp; inspection</div>
+              <div class="process-step-time">Approx. 1.5–2.5 hours</div>
+              <div>
+                Intake components, covers and ancillaries are removed for access. We then inspect the intake valves, ports and
+                related components to confirm the level of carbon build-up.
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-number">3</div>
+              <div class="process-step-title">Controlled walnut blasting</div>
+              <div class="process-step-time">Approx. 1.5–3 hours</div>
+              <div>
+                Each cylinder is rotated so the valves are closed. Using controlled air pressure and extraction, we blast the
+                ports and valves with crushed walnut shells until the metal surfaces are clean.
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-number">4</div>
+              <div class="process-step-title">Optional add-ons</div>
+              <div class="process-step-time">Time varies</div>
+              <div>
+                Where agreed, we clean the intake manifold, EGR passages or perform ultrasonic injector cleaning while
+                everything is accessible, helping you save on duplicated labour later.
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-number">5</div>
+              <div class="process-step-title">Reassembly &amp; resets</div>
+              <div class="process-step-time">Approx. 1–2 hours</div>
+              <div>
+                Components are refitted carefully with fresh gaskets where required. We then clear relevant codes, perform
+                throttle and adaptation resets where possible and check for leaks.
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-number">6</div>
+              <div class="process-step-title">Road test &amp; handover</div>
+              <div class="process-step-time">Approx. 20–30 minutes</div>
+              <div>
+                A road test verifies that the engine is running smoothly. On handover we go through what we found, what was
+                cleaned and any recommendations for future maintenance or checks.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Pricing</div>
+            <h2 class="section-title">Transparent pricing for walnut blasting in Halesowen</h2>
+            <p class="section-description">
+              Final pricing depends on engine code, layout and access, but the guide figures below will give you a realistic
+              idea. We’ll always confirm a firm price before any work begins.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <div>
+              <div class="pricing-table">
+                <div class="pricing-header">
+                  <div>
+                    <div class="pricing-header-title">Guide prices – walnut blasting &amp; related services</div>
+                    <div class="pricing-header-note">
+                      All walnut blasting jobs include pre- &amp; post-diagnostics and clear communication throughout.
+                    </div>
+                  </div>
+                  <div class="pricing-header-note">
+                    Prices shown are <strong>from</strong><br />
+                    Exact quote confirmed in advance.
+                  </div>
+                </div>
+
+                <div class="pricing-body">
+                  <div class="pricing-row">
+                    <div>
+                      <div class="pricing-name">4-cylinder direct-injection engines</div>
+                      <div class="pricing-name-sub">Common VAG 2.0 TFSI/TSI, BMW 4-cyl, Mercedes 4-cyl, Ford EcoBoost etc.</div>
+                    </div>
+                    <div class="pricing-price">from £379</div>
+                    <div class="pricing-meta">
+                      Intake manifold removed, intake valves &amp; ports walnut blasted, basic gaskets replaced and diagnostics
+                      included. Gasket kits supplied at cost.
+                    </div>
+                  </div>
+
+                  <div class="pricing-row">
+                    <div>
+                      <div class="pricing-name">6-cylinder direct-injection engines</div>
+                      <div class="pricing-name-sub">e.g. BMW N54/N55, V6 TFSI and similar layouts.</div>
+                    </div>
+                    <div class="pricing-price">from £599</div>
+                    <div class="pricing-meta">
+                      Extra time for access and additional valves/ports. Ideal for tuned or higher-mileage cars starting to feel
+                      flat or misfiring under load.
+                    </div>
+                  </div>
+
+                  <div class="pricing-row">
+                    <div>
+                      <div class="pricing-name">8-cylinder direct-injection engines</div>
+                      <div class="pricing-name-sub">High-performance V8 engines with direct injection.</div>
+                    </div>
+                    <div class="pricing-price">from £699</div>
+                    <div class="pricing-meta">
+                      Complex access and more cylinders mean more time. We’ll discuss the exact setup and any performance
+                      modifications before quoting.
+                    </div>
+                  </div>
+
+                  <div class="pricing-row">
+                    <div>
+                      <div class="pricing-name">Ultrasonic injector cleaning (add-on)</div>
+                      <div class="pricing-name-sub">Available while the system is apart for walnut blasting.</div>
+                    </div>
+                    <div class="pricing-price">£99 add-on</div>
+                    <div class="pricing-meta">
+                      Bench ultrasonic cleaning of injectors with basic flow assessment where possible. Best booked alongside
+                      walnut blasting to avoid duplicated labour.
+                    </div>
+                  </div>
+
+                  <div class="pricing-row">
+                    <div>
+                      <div class="pricing-name">Diagnostic assessment only</div>
+                      <div class="pricing-name-sub">If you’re unsure whether walnut blasting is required yet.</div>
+                    </div>
+                    <div class="pricing-price">£XX</div>
+                    <div class="pricing-meta">
+                      Includes scan, basic checks and advice. If you proceed with walnut blasting shortly afterwards, we can
+                      offset part of this against the main job.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="pricing-sidebar">
+              <div class="pricing-highlight">
+                <div class="pricing-highlight-title">Next working day turnaround on most jobs</div>
+                <p style="margin:0 0 0.35rem;">
+                  Many 4-cylinder engines can be completed same or next working day when booked in advance and dropped off first
+                  thing. Engines needing front-end removal or extra work may take longer – we’ll let you know when quoting.
+                </p>
+                <div class="pricing-highlight-tag">
+                  Send your registration, mileage and symptoms and we’ll reply with a clear recommendation and estimated
+                  turnaround.
+                </div>
+              </div>
+
+              <div>
+                <strong>Payment options:</strong><br />
+                We accept cash and major debit/credit cards. Full payment is due on collection. If you want to combine walnut
+                blasting with other work (timing, wiring, injectors, etc.) we can plan it together to save on labour time.
+              </div>
+
+              <div>
+                <strong>Best time to book:</strong><br />
+                Ideally book a weekday morning drop-off. Saturday work is strictly by appointment and tends to fill quickly.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Before & after -->
+      <section id="before-after">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Before &amp; after</div>
+            <h2 class="section-title">Real-world before and after results</h2>
+            <p class="section-description">
+              These photos show the kind of carbon build-up we deal with every day – and the results after a careful walnut
+              blast. They include intake valves, ports and an Audi RS4 example.
+            </p>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-card">
+              <div class="ba-title">Intake valves – heavy carbon vs clean</div>
+              <div class="ba-image">
+                <img src="images/beforeandafter1.jpg" alt="Intake valves before and after walnut blasting" />
+              </div>
+              <div class="ba-caption">
+                Close-up intake valves with thick, crusted carbon deposits compared with the same valves after walnut blasting,
+                where the metal surfaces are back to a clean finish.
+              </div>
+            </div>
+
+            <div class="ba-card">
+              <div class="ba-title">Intake ports – before &amp; after</div>
+              <div class="ba-image">
+                <img src="images/beforeandafter2.jpg" alt="Intake ports before and after walnut blasting" />
+              </div>
+              <div class="ba-caption">
+                Port walls coated in uneven deposits on the “before” side against freshly blasted ports that allow the engine to
+                breathe properly again.
+              </div>
+            </div>
+
+            <div class="ba-card">
+              <div class="ba-title">Audi RS4 intake – before cleaning</div>
+              <div class="ba-image">
+                <img src="images/rs4before2.jpeg" alt="Audi RS4 intake ports with heavy carbon before cleaning" />
+              </div>
+              <div class="ba-caption">
+                Example Audi RS4 intake ports with dark, uneven carbon build-up coating the walls and valve area before any
+                blasting work is carried out.
+              </div>
+            </div>
+
+            <div class="ba-card">
+              <div class="ba-title">Audi RS4 intake – after walnut blasting</div>
+              <div class="ba-image">
+                <img src="images/rs4after2.jpeg" alt="Audi RS4 intake ports after walnut blasting" />
+              </div>
+              <div class="ba-caption">
+                The same RS4 ports after walnut blasting – carbon removed, bare alloy visible and a consistent finish across the
+                port walls and valve area.
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top:1.1rem;font-size:0.8rem;color:var(--text-muted);">
+            Every job can include photos of your own valves and ports on request, so you can see exactly what has been cleaned on
+            your engine.
+          </p>
+        </div>
+      </section>
+
+      <!-- Bookings & contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Bookings &amp; contact</div>
+            <h2 class="section-title">Request a walnut blasting or intake cleaning quote</h2>
+            <p class="section-description">
+              Visits are strictly by appointment only. Use the form below or call us with your registration, mileage and a brief
+              description of the symptoms and we’ll come back with a clear recommendation and price.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <form class="contact-form-card" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Full name <span class="form-required">*</span></label>
+                    <input class="form-control" type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="phone">Phone number <span class="form-required">*</span></label>
+                    <input class="form-control" type="tel" id="phone" name="phone" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email address</label>
+                    <input class="form-control" type="email" id="email" name="email" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="reg">Vehicle registration <span class="form-required">*</span></label>
+                    <input class="form-control" type="text" id="reg" name="reg" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="mileage">Current mileage (approx.)</label>
+                    <input class="form-control" type="number" id="mileage" name="mileage" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="engine">Engine / model</label>
+                    <input class="form-control" type="text" id="engine" name="engine"
+                           placeholder="e.g. 2.0 TFSI, N54, 3.0 TDI..." />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="serviceType">What are you interested in?</label>
+                  <select class="form-select" id="serviceType" name="service">
+                    <option value="walnut-main">Walnut blasting – intake valves &amp; ports</option>
+                    <option value="walnut-plus-manifold">Walnut blasting + intake manifold clean</option>
+                    <option value="walnut-plus-egr">Walnut blasting + diesel intake/EGR clean (where suitable)</option>
+                    <option value="walnut-plus-injector">Walnut blasting + ultrasonic injector clean</option>
+                    <option value="diagnostics">Diagnostic assessment first</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Describe the symptoms or what you’re looking for</label>
+                  <textarea class="form-textarea" id="message" name="message"
+                            placeholder="Hesitation, misfires, rough idle, lack of power, poor MPG, EGR issues, etc."></textarea>
+                </div>
+
+                <div class="form-footer">
+                  <button type="submit" class="btn-primary">
+                    <span>📩</span>
+                    <span>Send booking / quote request</span>
+                  </button>
+                  <p class="form-hint">
+                    We’ll get back to you as soon as possible during opening hours. Your details are only used to respond to
+                    your enquiry.
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <aside class="contact-info-card">
+              <div class="contact-row">
+                <div class="contact-label">Garage name</div>
+                <div class="contact-value">Kovac Services Ltd – Walnut Blasting &amp; Carbon Cleaning</div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-label">Garage location</div>
+                <div class="contact-value">
+                  Unit F, Leona Trading Estate, Nimmings Road, Halesowen, B62 9JQ
+                </div>
+                <div class="contact-map">
+                  <iframe
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.769812396971!2d-2.0574!3d52.4692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sUnit%20F%2C%20Leona%20Trading%20Estate%2C%20Nimmings%20Road%2C%20Halesowen%20B62%209JQ!5e0!3m2!1sen!2suk!4v1700000000000">
+                  </iframe>
+                </div>
+                <div class="contact-alert">
+                  Visits are <strong>strictly by appointment only</strong>. Please contact us before travelling to the workshop.
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-label">Call the workshop</div>
+                <div class="contact-value">
+                  <a href="tel:07833823384">0783 382 3384</a>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-label">Opening hours</div>
+                <div class="contact-hours-grid">
+                  <div>Mon–Fri</div>
+                  <div>09:00 – 18:00</div>
+                  <div>Saturday</div>
+                  <div>By appointment</div>
+                  <div>Sunday</div>
+                  <div>Closed</div>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-label">Areas we cover</div>
+                <div>
+                  Halesowen, Stourbridge, Dudley, Birmingham, Bromsgrove, Kidderminster and surrounding West Midlands areas.
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-label">Best way to book</div>
+                <div>
+                  Send your registration, mileage and symptoms via the form or call us. We’ll confirm whether walnut blasting is
+                  suitable and offer dates that work for you.
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -1633,7 +1718,7 @@
         <div class="footer-links">
           <a href="#top">Back to top</a>
           <a href="#what-we-do">What we do</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#before-after">Before &amp; after</a>
           <a href="#contact">Bookings &amp; contact</a>
         </div>
       </div>
@@ -1647,34 +1732,56 @@
 
     if (navToggle && mobileNav) {
       navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
         mobileNav.classList.toggle("show");
       });
 
       mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
+          navToggle.classList.remove("active");
           mobileNav.classList.remove("show");
         });
       });
     }
 
-    // Smooth scrolling for internal links
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         const targetId = this.getAttribute("href");
         if (!targetId || targetId === "#") return;
-
         const target = document.querySelector(targetId);
         if (target) {
           e.preventDefault();
+          const offset = 80;
           const rect = target.getBoundingClientRect();
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          const offset = 80;
-          const targetPos = rect.top + scrollTop - offset;
+          const targetPosition = rect.top + scrollTop - offset;
+          window.scrollTo({ top: targetPosition, behavior: "smooth" });
+        }
+      });
+    });
 
-          window.scrollTo({
-            top: targetPos,
-            behavior: "smooth",
-          });
+    // Active nav pill on scroll (simple)
+    const sections = ["#top", "#what-we-do", "#why-walnut", "#process", "#pricing", "#before-after", "#contact"]
+      .map((id) => document.querySelector(id))
+      .filter(Boolean);
+
+    const navLinks = document.querySelectorAll(".nav-center .nav-pill, .nav-center-mobile .nav-pill");
+
+    window.addEventListener("scroll", () => {
+      const scrollPos = window.scrollY + 90;
+      let current = "#top";
+      sections.forEach((section) => {
+        if (section.offsetTop <= scrollPos) current = "#" + section.id;
+      });
+
+      navLinks.forEach((link) => {
+        if (link.getAttribute("href") === current) {
+          link.classList.add("active");
+        } else if (link.textContent.trim() === "Home" && current === "#top") {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
         }
       });
     });
