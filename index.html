@@ -564,9 +564,7 @@
     }
 
     .versus-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
+      /* no longer used for layout, kept for compatibility if needed */
       margin-top: 1rem;
       font-size: 0.83rem;
     }
@@ -602,6 +600,57 @@
       background: #fee2e2;
       padding: 0.1rem 0.55rem;
       border-radius: var(--radius-pill);
+    }
+
+    /* New: tabbed layout for comparison section */
+
+    .versus-tabs {
+      margin-top: 1rem;
+    }
+
+    .versus-tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .versus-tab {
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      font-size: 0.82rem;
+      color: var(--text-soft);
+      cursor: pointer;
+      transition:
+        background var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast),
+        box-shadow var(--transition-fast);
+    }
+
+    .versus-tab.active {
+      background: #111827;
+      border-color: #111827;
+      color: #f9fafb;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.25);
+    }
+
+    .versus-tab:focus-visible {
+      outline: 2px solid #f97316;
+      outline-offset: 2px;
+    }
+
+    .versus-panels {
+      margin-top: 0.8rem;
+    }
+
+    .versus-panel {
+      display: none;
+    }
+
+    .versus-panel.active {
+      display: block;
     }
 
     /* Process */
@@ -1084,14 +1133,14 @@
         </div>
 
         <aside class="hero-right" aria-label="Before and after walnut blasting">
-  <div class="hero-panel hero-panel-image">
-    <img
-      src="images/Whyblast.jpg"
-      alt="Before and after walnut blasting on direct injection intake valves"
-      class="hero-main-image"
-    />
-  </div>
-</aside>
+          <div class="hero-panel hero-panel-image">
+            <img
+              src="images/Whyblast.jpg"
+              alt="Before and after walnut blasting on direct injection intake valves"
+              class="hero-main-image"
+            />
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -1227,34 +1276,58 @@
               </p>
             </div>
 
-            <div class="versus-grid">
-              <div class="versus-card">
-                <div class="versus-title">Walnut blasting</div>
-                <p>
-                  Physically removes heavy carbon from valves, ports and some intake/EGR areas. Safe for metal surfaces when
-                  used at the correct pressure with valves closed and extraction in place.
-                </p>
-                <span class="versus-badge-good">✔ Safest &amp; most effective for heavy build-up</span>
+            <!-- NEW: tabbed comparison layout -->
+            <div class="versus-tabs" aria-label="Carbon cleaning method comparison">
+              <div class="versus-tab-list" role="tablist">
+                <button class="versus-tab active" role="tab" aria-selected="true" aria-controls="tab-walnut" id="tab-walnut-btn">
+                  Walnut blasting
+                </button>
+                <button class="versus-tab" role="tab" aria-selected="false" aria-controls="tab-hho" id="tab-hho-btn">
+                  HHO / hydrogen cleaning
+                </button>
+                <button class="versus-tab" role="tab" aria-selected="false" aria-controls="tab-additives" id="tab-additives-btn">
+                  Sprays &amp; additives
+                </button>
               </div>
-              <div class="versus-card">
-                <div class="versus-title">HHO / hydrogen carbon cleaning</div>
-                <p>
-                  Gasses are fed through the intake while the engine runs. Can help with light combustion deposits but has very
-                  limited effect on thick carbon stuck upstream of the combustion chamber – especially on intake valves of
-                  direct-injection engines.
-                </p>
-                <span class="versus-badge-bad">✘ Limited effect where the real problem is</span>
-              </div>
-              <div class="versus-card">
-                <div class="versus-title">Sprays &amp; fuel additives</div>
-                <p>
-                  Additives in the tank or aerosol sprays into the intake may tidy light residues, but they can’t reach or scrub
-                  baked deposits on the back of the valves. In some cases they risk dislodging chunks of carbon with nowhere
-                  safe to go.
-                </p>
-                <span class="versus-badge-bad">✘ Not a solution for serious build-up</span>
+
+              <div class="versus-panels">
+                <div class="versus-panel active" id="tab-walnut" role="tabpanel" aria-labelledby="tab-walnut-btn">
+                  <div class="versus-card">
+                    <div class="versus-title">Walnut blasting</div>
+                    <p>
+                      Physically removes heavy carbon from valves, ports and some intake/EGR areas. Safe for metal surfaces when
+                      used at the correct pressure with valves closed and extraction in place.
+                    </p>
+                    <span class="versus-badge-good">✔ Safest &amp; most effective for heavy build-up</span>
+                  </div>
+                </div>
+
+                <div class="versus-panel" id="tab-hho" role="tabpanel" aria-labelledby="tab-hho-btn">
+                  <div class="versus-card">
+                    <div class="versus-title">HHO / hydrogen carbon cleaning</div>
+                    <p>
+                      Gasses are fed through the intake while the engine runs. Can help with light combustion deposits but has
+                      very limited effect on thick carbon stuck upstream of the combustion chamber – especially on intake valves
+                      of direct-injection engines.
+                    </p>
+                    <span class="versus-badge-bad">✘ Limited effect where the real problem is</span>
+                  </div>
+                </div>
+
+                <div class="versus-panel" id="tab-additives" role="tabpanel" aria-labelledby="tab-additives-btn">
+                  <div class="versus-card">
+                    <div class="versus-title">Sprays &amp; fuel additives</div>
+                    <p>
+                      Additives in the tank or aerosol sprays into the intake may tidy light residues, but they can’t reach or
+                      scrub baked deposits on the back of the valves. In some cases they risk dislodging chunks of carbon with
+                      nowhere safe to go.
+                    </p>
+                    <span class="versus-badge-bad">✘ Not a solution for serious build-up</span>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- End new tabbed layout -->
           </div>
         </div>
       </div>
@@ -1447,38 +1520,49 @@
           <div class="section-kicker">Before &amp; after</div>
           <h2 class="section-title">Real-world before and after results</h2>
           <p class="section-description">
-            Below are four slots ready for your own before/after images – for example, intake valves, ports, EGR valves and
-            intake manifolds. Simply replace the placeholders with your photos when you’re ready.
+            Below are real examples from walnut blasting work carried out at Kovac Services Ltd – including cylinder port
+            cleaning and Audi RS4 intake work.
           </p>
         </div>
 
         <div class="ba-grid">
           <div class="ba-card">
-            <div class="ba-title">Intake valves – before &amp; after</div>
+            <div class="ba-title">Cylinder ports – before &amp; after 1</div>
             <div class="ba-image">
-              Replace with a side-by-side comparison of heavy carbon on intake valves versus fully cleaned valves after walnut
-              blasting.
+              <img
+                src="images/beforeandafter1.jpg"
+                alt="Cylinder ports before and after walnut blasting showing heavy carbon removed"
+              />
             </div>
           </div>
 
           <div class="ba-card">
-            <div class="ba-title">Intake ports – before &amp; after</div>
+            <div class="ba-title">Cylinder ports – before &amp; after 2</div>
             <div class="ba-image">
-              Replace with photos showing port walls coated in deposits versus clean, bare metal after blasting.
+              <img
+                src="images/beforeandafter2.jpg"
+                alt="Second example of cylinder ports before and after walnut blasting"
+              />
             </div>
           </div>
 
           <div class="ba-card">
-            <div class="ba-title">EGR &amp; intake tract – before &amp; after</div>
+            <div class="ba-title">Audi RS4 cylinder ports – before</div>
             <div class="ba-image">
-              Replace with images of a soot-clogged EGR passage or intake manifold compared with a cleaned version.
+              <img
+                src="images/rs4before2.jpeg"
+                alt="Audi RS4 cylinder ports with heavy carbon build-up before walnut blasting"
+              />
             </div>
           </div>
 
           <div class="ba-card">
-            <div class="ba-title">Injector or manifold cleaning</div>
+            <div class="ba-title">Audi RS4 cylinder ports – after</div>
             <div class="ba-image">
-              Replace with before/after shots of injectors or manifold internals following ultrasonic and manual cleaning.
+              <img
+                src="images/rs4after1.jpeg"
+                alt="Audi RS4 cylinder ports after walnut blasting with clean metal surfaces"
+              />
             </div>
           </div>
         </div>
@@ -1677,7 +1761,35 @@
 
     // Year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Comparison tabs
+    const versusTabs = document.querySelectorAll(".versus-tab");
+    const versusPanels = document.querySelectorAll(".versus-panel");
+
+    if (versusTabs.length && versusPanels.length) {
+      versusTabs.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.getAttribute("aria-controls");
+          if (!targetId) return;
+
+          versusTabs.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+
+          versusPanels.forEach((panel) => {
+            panel.classList.remove("active");
+          });
+
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+          const targetPanel = document.getElementById(targetId);
+          if (targetPanel) {
+            targetPanel.classList.add("active");
+          }
+        });
+      });
+    }
   </script>
 </body>
 </html>
-
