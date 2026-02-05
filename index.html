@@ -5,10 +5,10 @@
   <title>Walnut Blasting Birmingham & West Midlands | Intake Valve Carbon Cleaning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="Walnut blasting in Birmingham & the West Midlands. Proper intake valve & port carbon cleaning with full manifold removal, controlled media and extraction. Audi VW BMW and direct-injection specialists. Appointment only. Call 0783 382 3384." />
+        content="Walnut blasting in Birmingham & the West Midlands. Proper intake valve & port carbon cleaning for petrol direct injection and suitable diesel engines. From 3-cylinder to Bentley W12. Appointment only. Call 0783 382 3384." />
   <meta name="robots" content="index,follow" />
 
-  <!-- Canonical (edit to your exact URL) -->
+  <!-- Canonical (edit if your exact URL differs) -->
   <link rel="canonical" href="https://www.walnutcarbonclean.co.uk/" />
 
   <!-- Google tag (gtag.js) -->
@@ -78,11 +78,7 @@
       scroll-behavior: smooth;
     }
 
-    body {
-      min-height: 100vh;
-      line-height: 1.6;
-    }
-
+    body { min-height: 100vh; line-height: 1.6; }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
@@ -139,11 +135,7 @@
       color: #111827;
     }
 
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      white-space: nowrap;
-    }
+    .logo-text { display: flex; flex-direction: column; white-space: nowrap; }
 
     .logo-text-main {
       font-weight: 700;
@@ -152,10 +144,7 @@
       text-transform: uppercase;
     }
 
-    .logo-text-sub {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
+    .logo-text-sub { font-size: 0.78rem; color: var(--text-muted); }
 
     .nav-links {
       display: flex;
@@ -177,12 +166,7 @@
       color: var(--text-soft);
       font-size: 0.82rem;
       font-weight: 500;
-      transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        color var(--transition-fast),
-        transform var(--transition-fast),
-        box-shadow var(--transition-fast);
+      transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
     }
 
     .nav-pill:hover {
@@ -200,10 +184,7 @@
       box-shadow: 0 12px 28px rgba(15, 23, 42, 0.28);
     }
 
-    .nav-pill--primary:hover {
-      background: #020617;
-      border-color: #020617;
-    }
+    .nav-pill--primary:hover { background: #020617; border-color: #020617; }
 
     .nav-toggle {
       display: none;
@@ -256,11 +237,7 @@
       color: var(--text-soft);
     }
 
-    .nav-links-mobile a:hover {
-      background: #111827;
-      color: #f9fafb;
-    }
-
+    .nav-links-mobile a:hover { background: #111827; color: #f9fafb; }
     .nav-links-mobile.show { display: flex; }
 
     /* Hero */
@@ -310,7 +287,7 @@
     .hero-subtitle {
       font-size: 1rem;
       color: var(--text-soft);
-      max-width: 42rem;
+      max-width: 44rem;
       margin-bottom: 1rem;
     }
 
@@ -322,12 +299,7 @@
       color: var(--text-soft);
     }
 
-    .hero-bullets li {
-      display: flex;
-      gap: 0.55rem;
-      margin-bottom: 0.35rem;
-    }
-
+    .hero-bullets li { display: flex; gap: 0.55rem; margin-bottom: 0.35rem; }
     .hero-bullet-icon { font-size: 1rem; line-height: 1.2; }
 
     .hero-actions {
@@ -372,12 +344,7 @@
       align-items: center;
       gap: 0.4rem;
       cursor: pointer;
-      transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        color var(--transition-fast),
-        transform var(--transition-fast),
-        box-shadow var(--transition-fast);
+      transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
     }
 
     .btn-ghost:hover {
@@ -388,41 +355,35 @@
       box-shadow: 0 14px 36px rgba(15, 23, 42, 0.25);
     }
 
-    .hero-note {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      max-width: 34rem;
-    }
+    .hero-note { font-size: 0.82rem; color: var(--text-muted); max-width: 34rem; }
 
     .hero-right { position: relative; }
+
+    /* HERO IMAGE FIX: stop stretching, keep nice crop */
+    .hero-panel-image {
+      border-radius: 1.5rem;
+      border: 1px solid rgba(209, 213, 219, 0.9);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .hero-main-image {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;         /* key: crop instead of stretch */
+      object-position: center;   /* keep centered */
+      display: block;
+    }
 
     /* Sections base */
     main { flex: 1; }
     section { padding: 3rem 0 3rem; }
 
-    .section-header {
-      max-width: 48rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .section-kicker {
-      font-size: 0.79rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-bottom: 0.2rem;
-    }
-
-    .section-title {
-      font-size: 1.7rem;
-      margin: 0 0 0.45rem;
-    }
-
-    .section-description {
-      font-size: 0.96rem;
-      color: var(--text-soft);
-      margin: 0;
-    }
+    .section-header { max-width: 48rem; margin-bottom: 1.8rem; }
+    .section-kicker { font-size: 0.79rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem; }
+    .section-title { font-size: 1.7rem; margin: 0 0 0.45rem; }
+    .section-description { font-size: 0.96rem; color: var(--text-soft); margin: 0; }
 
     .card {
       border-radius: var(--radius-lg);
@@ -439,7 +400,7 @@
       align-items: flex-start;
     }
 
-    /* What we do */
+    /* Lists / pills */
     .list-check {
       list-style: none;
       padding: 0;
@@ -450,15 +411,28 @@
       color: var(--text-soft);
     }
 
-    .list-check li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-
+    .list-check li { display: flex; align-items: flex-start; gap: 0.5rem; }
     .list-check-icon { margin-top: 0.1rem; font-size: 0.95rem; }
     .list-strong { font-weight: 500; color: var(--text-main); }
 
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.4rem;
+      margin-top: 0.9rem;
+    }
+
+    .pill-small {
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* Services columns */
     .service-main-addons {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -480,24 +454,7 @@
       gap: 0.3rem;
     }
 
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.4rem;
-      margin-top: 0.9rem;
-    }
-
-    .pill-small {
-      padding: 0.25rem 0.7rem;
-      border-radius: var(--radius-pill);
-      border: 1px solid #e5e7eb;
-      background: #f9fafb;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    /* Why walnut blasting */
+    /* Highlight box */
     .highlight-box {
       border-radius: 1rem;
       background: #fffbeb;
@@ -508,6 +465,7 @@
       margin-top: 0.9rem;
     }
 
+    /* Tabs */
     .versus-tabs { margin-top: 1rem; }
     .versus-tab-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
@@ -637,7 +595,6 @@
     .pricing-sub { font-size: 0.8rem; color: var(--text-muted); }
     .pricing-price { font-weight: 700; font-size: 0.95rem; }
     .pricing-meta { font-size: 0.8rem; color: var(--text-soft); }
-
     .pricing-side { display: flex; flex-direction: column; gap: 1rem; }
 
     .pricing-highlight {
@@ -757,6 +714,9 @@
       max-width: 19rem;
     }
 
+    /* Success message */
+    #formSuccess { display: none; }
+
     .contact-card {
       border-radius: 1.2rem;
       border: 1px solid #e5e7eb;
@@ -824,6 +784,7 @@
       .ba-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .nav-links { display: none; }
       .nav-toggle { display: inline-flex; }
+      .hero-main-image { height: 320px; }
     }
 
     @media (max-width: 720px) {
@@ -833,6 +794,7 @@
       .ba-grid { grid-template-columns: minmax(0, 1fr); }
       .form-row { grid-template-columns: minmax(0, 1fr); }
       .service-main-addons { grid-template-columns: minmax(0, 1fr); }
+      .hero-main-image { height: 260px; }
     }
   </style>
 </head>
@@ -884,30 +846,35 @@
         <div class="hero-left">
           <div class="hero-kicker">
             <span class="hero-kicker-badge">West Midlands</span>
-            <span>Specialist walnut blasting for intake valves &amp; ports (Audi, VW, BMW &amp; more)</span>
+            <span>Walnut blasting for petrol direct injection + suitable diesel intake systems (3-cyl to W12)</span>
           </div>
 
           <h1 class="hero-title">
-            Walnut blasting in <span class="highlight">Birmingham</span> &amp; the West Midlands for direct injection engines.
+            Walnut blasting in <span class="highlight">Birmingham</span> &amp; the West Midlands for intake valve carbon build-up.
           </h1>
 
           <p class="hero-subtitle">
             Kovac Services Ltd carry out proper intake valve and port carbon removal using controlled walnut shell media,
-            full manifold removal and continuous extraction. No “spray and pray” quick cleans.
+            full manifold removal and continuous extraction. We work on engines from <strong>3-cylinder</strong> setups right up to
+            <strong>Bentley W12</strong> applications, including petrol <strong>direct injection</strong> and suitable <strong>diesel</strong> engines.
           </p>
 
           <ul class="hero-bullets">
             <li>
               <span class="hero-bullet-icon">✅</span>
-              <span>Main service: intake valve &amp; port walnut blasting with full manifold removal and correct valve positioning.</span>
+              <span>Intake valve &amp; port walnut blasting with correct valve positioning and controlled extraction.</span>
+            </li>
+            <li>
+              <span class="hero-bullet-icon">🧠</span>
+              <span>We cover <strong>petrol DI</strong> (TFSI/TSI/GDI/CGI/EcoBoost) and <strong>diesel intake/EGR build-up</strong> where suitable.</span>
             </li>
             <li>
               <span class="hero-bullet-icon">🔧</span>
-              <span>Add-ons such as intake manifold &amp; EGR cleaning and <strong>ultrasonic injector cleaning</strong> can be combined in the same visit.</span>
+              <span>Add-ons available: intake manifold &amp; EGR cleaning, throttle body cleaning, <strong>ultrasonic injector cleaning</strong>.</span>
             </li>
             <li>
               <span class="hero-bullet-icon">⏱</span>
-              <span>Typical turnaround: <strong>next working day</strong> (24 hours) to allow for stubborn fixings or front-end removal on tighter engines.</span>
+              <span>Typical turnaround: <strong>next working day</strong> (24 hours) to allow careful access work on tight engines.</span>
             </li>
           </ul>
 
@@ -935,8 +902,7 @@
           </div>
 
           <p class="hero-note">
-            Tell us your registration, mileage and symptoms and we’ll confirm whether walnut blasting is the right fix for
-            <em>your</em> engine, not just a box we tick.
+            Tell us your registration, mileage, engine and symptoms. We’ll confirm whether walnut blasting is the right fix for your engine before you book.
           </p>
         </div>
 
@@ -946,15 +912,15 @@
               src="images/Whyblast.jpg"
               alt="Before and after walnut blasting on direct injection intake valves"
               class="hero-main-image"
-              width="1200"
-              height="800"
+              width="1400"
+              height="900"
             />
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- What we do / main service & add-ons -->
+    <!-- What we do -->
     <section id="what-we-do">
       <div class="container">
         <div class="grid-2">
@@ -963,9 +929,10 @@
               <div class="section-kicker">What we do</div>
               <h2 class="section-title">Walnut blasting done properly, not a “quick clean” gimmick</h2>
               <p class="section-description">
-                On modern direct-injection engines, fuel is injected straight into the combustion chamber, not over the back of
-                the valves. Oil vapour and EGR soot stick to the valve stems and ports, slowly choking airflow and upsetting
-                mixture. Walnut blasting is the safest way to remove that carbon when performed correctly.
+                On modern petrol direct-injection engines, fuel is injected straight into the combustion chamber, not over the back of
+                the valves. Oil vapour and EGR soot stick to the valve stems and ports, slowly choking airflow and upsetting mixture.
+                Walnut blasting is the safest way to remove that carbon when performed correctly. We also clean suitable diesel intake systems
+                where carbon and soot build-up restricts flow.
               </p>
             </div>
 
@@ -976,44 +943,44 @@
                   <span class="list-check-icon">✔</span>
                   <span>
                     <span class="list-strong">Full access, no shortcuts</span><br />
-                    Intake manifold removed so each port can be cleaned directly. We don’t just spray through the throttle
-                    body and hope for the best.
+                    Intake manifold removed so each port can be cleaned directly. We don’t just spray through the throttle body.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">✔</span>
                   <span>
                     <span class="list-strong">Valves locked closed</span><br />
-                    The engine is rotated by hand so only the cylinder being blasted has its valves closed, keeping walnut
-                    media out of the combustion chamber.
+                    The engine is rotated by hand so only the cylinder being blasted has its valves closed, keeping media out of the combustion chamber.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">✔</span>
                   <span>
                     <span class="list-strong">Controlled media &amp; extraction</span><br />
-                    Crushed walnut shell is fired at controlled pressure, with continuous vacuum extraction to lift loosened
-                    carbon out of the port.
+                    Crushed walnut shell at controlled pressure with continuous vacuum extraction to lift carbon out of the port.
                   </span>
                 </li>
                 <li>
                   <span class="list-check-icon">✔</span>
                   <span>
                     <span class="list-strong">Proof of work</span><br />
-                    We can provide before and after photos or borescope footage of your own valves and ports, not stock images.
+                    We can provide before/after photos or borescope footage of your own valves and ports.
                   </span>
                 </li>
               </ul>
+
+              <div class="highlight-box">
+                <strong>Engine coverage:</strong> from <strong>3-cylinder</strong> engines up to high-cylinder-count performance and luxury engines including <strong>Bentley W12</strong> (access-dependent).
+              </div>
             </div>
           </div>
 
           <div>
             <div class="section-header">
               <div class="section-kicker">Main service &amp; add-ons</div>
-              <h2 class="section-title">What we offer at Kovac Services Ltd</h2>
+              <h2 class="section-title">Petrol DI + suitable diesel engines</h2>
               <p class="section-description">
-                Walnut blasting of the intake valves and ports is the core service. Extra cleaning work can be added at the same
-                time to make the most of the strip-down.
+                Walnut blasting of intake valves and ports is the core service for petrol direct injection engines. We also work on suitable diesel intake/EGR systems where soot build-up causes restriction. Extra cleaning can be added during the same visit to make the most of the strip-down.
               </p>
             </div>
 
@@ -1021,31 +988,31 @@
               <div class="service-main-addons">
                 <div>
                   <div class="service-col-title">Main walnut blasting service</div>
-                  <div class="service-col-sub">Intake valves &amp; ports – petrol &amp; diesel</div>
+                  <div class="service-col-sub">Intake valves &amp; ports</div>
                   <ul class="service-list">
-                    <li>Direct-injection petrol (TFSI, GDI, TSI, CGI, EcoBoost, etc.)</li>
-                    <li>Suitable diesel engines with heavy EGR/soot build-up in the intake</li>
-                    <li>Ideal from ~50–70k miles or sooner on tuned/short-run vehicles</li>
-                    <li>Helps restore power, smoothness and idle quality</li>
+                    <li>Petrol direct injection (TFSI, GDI, TSI, CGI, EcoBoost, etc.)</li>
+                    <li>Suitable diesel intake &amp; EGR build-up cases (engine-dependent)</li>
+                    <li>From small 3-cylinder engines to large multi-cylinder layouts including W12</li>
+                    <li>Helps restore airflow, throttle response, idle quality and drivability</li>
                   </ul>
                 </div>
                 <div>
                   <div class="service-col-title">Popular add-ons</div>
-                  <div class="service-col-sub">Completed during the same visit</div>
+                  <div class="service-col-sub">Done during the same visit</div>
                   <ul class="service-list">
-                    <li>Intake manifold removal, deep cleaning &amp; refit</li>
-                    <li>EGR valve &amp; EGR passage cleaning where accessible</li>
+                    <li>Intake manifold deep clean (where required)</li>
+                    <li>EGR valve &amp; EGR passage cleaning (where accessible)</li>
                     <li>Throttle body cleaning &amp; adaptation (where supported)</li>
-                    <li><strong>Ultrasonic injector cleaning</strong> – add for <strong>£99</strong> when booked with walnut blasting</li>
+                    <li><strong>Ultrasonic injector cleaning</strong> – add for <strong>£99</strong> with blasting</li>
                   </ul>
                 </div>
               </div>
 
               <div class="pill-row">
                 <span class="pill-small">Birmingham &amp; West Midlands</span>
-                <span class="pill-small">Direct-injection petrol</span>
-                <span class="pill-small">Selected diesel intake &amp; EGR systems</span>
-                <span class="pill-small">Honest advice before we start</span>
+                <span class="pill-small">Petrol direct injection</span>
+                <span class="pill-small">Suitable diesel intake/EGR</span>
+                <span class="pill-small">3-cylinder to W12</span>
               </div>
             </div>
           </div>
@@ -1060,8 +1027,7 @@
           <div class="section-kicker">Areas</div>
           <h2 class="section-title">Walnut blasting near Birmingham and across the West Midlands</h2>
           <p class="section-description">
-            Customers travel to us from across the West Midlands for proper intake valve carbon removal. If you searched “walnut
-            blasting near me”, this page is built for you.
+            Customers travel to us from across the West Midlands for proper intake valve carbon removal on petrol DI and suitable diesel engines.
           </p>
         </div>
 
@@ -1088,12 +1054,13 @@
               <h2 class="section-title">Why this method beats sprays, additives and HHO “carbon cleans”</h2>
               <p class="section-description">
                 Fuel additives, chemical sprays and hydrogen machines may shift light combustion deposits, but they can’t physically remove
-                the thick carbon stuck on intake valves and inside ports on direct-injection engines.
+                the thick carbon stuck on intake valves and inside ports on petrol direct injection engines. Walnut blasting is a proper mechanical clean.
+                For suitable diesel engines, targeted intake/EGR cleaning can also make a real difference where soot restriction is the issue.
               </p>
             </div>
 
             <div class="highlight-box">
-              <strong>Walnut blasting is both <em>mechanical</em> and <em>targeted</em>.</strong>
+              <strong>Walnut blasting is mechanical and targeted.</strong>
               Crushed walnut shells break carbon away from metal surfaces while extraction removes debris. Done correctly, it’s one of the safest and most effective ways to remove heavy intake deposits without damaging components.
             </div>
           </div>
@@ -1103,7 +1070,7 @@
               <div class="section-kicker">Comparison</div>
               <h2 class="section-title">Walnut blasting vs other “carbon cleaning” methods</h2>
               <p class="section-description">
-                Here’s how walnut blasting compares to common alternatives currently on the market.
+                Here’s how walnut blasting compares to common alternatives.
               </p>
             </div>
 
@@ -1137,7 +1104,7 @@
                     <div class="versus-title">HHO / hydrogen carbon cleaning</div>
                     <p>
                       Gas is fed through the intake while the engine runs. Can help with light combustion deposits but has very limited effect
-                      on thick carbon stuck on intake valves of direct-injection engines.
+                      on thick carbon stuck on intake valves of petrol direct injection engines.
                     </p>
                     <span class="versus-badge-bad">✘ Limited effect where the real problem is</span>
                   </div>
@@ -1168,7 +1135,7 @@
           <div class="section-kicker">Popular</div>
           <h2 class="section-title">Audi / VW walnut blasting specialists (TFSI, TSI, GDI)</h2>
           <p class="section-description">
-            Direct injection engines commonly suffer intake valve carbon build-up causing hesitation, rough idle, misfires, flat spots and MPG drop.
+            Petrol direct injection engines commonly suffer intake valve carbon build-up causing hesitation, rough idle, misfires, flat spots and MPG drop.
           </p>
         </div>
 
@@ -1176,7 +1143,8 @@
           <ul class="list-check" style="margin-top:0;">
             <li><span class="list-check-icon">✔</span><span><span class="list-strong">Audi / VW:</span> 1.4 TSI, 1.8 TFSI, 2.0 TFSI and similar DI engines.</span></li>
             <li><span class="list-check-icon">✔</span><span><span class="list-strong">BMW / MINI:</span> common DI build-up patterns, especially on higher mileage or short-run cars.</span></li>
-            <li><span class="list-check-icon">✔</span><span><span class="list-strong">Proper strip-down:</span> manifold removal, valves positioned closed, controlled media + extraction.</span></li>
+            <li><span class="list-check-icon">✔</span><span><span class="list-strong">Diesel intake/EGR:</span> where soot restriction is the issue, we can advise if cleaning is worthwhile.</span></li>
+            <li><span class="list-check-icon">✔</span><span><span class="list-strong">Engine range:</span> from 3-cylinder to high cylinder count engines including W12 (access-dependent).</span></li>
           </ul>
           <div class="highlight-box" style="margin-bottom:0;">
             If you’re unsure, book a <strong>diagnostic assessment first</strong>. We’d rather lose a job than sell you the wrong fix.
@@ -1192,7 +1160,7 @@
           <div class="section-kicker">Process</div>
           <h2 class="section-title">Our walnut blasting process, step by step</h2>
           <p class="section-description">
-            Every car is different, especially when front-end removal or extra diagnostics are involved, but the overall flow of the job is consistent.
+            Every car is different, especially when access is tight. We allow enough time to do it properly rather than rushing.
           </p>
         </div>
 
@@ -1223,7 +1191,7 @@
             <div class="process-time">1.5–3 hours</div>
             <div>
               Each port is cleaned with crushed walnut shell media while the valves are shut and extraction is running.
-              If you’ve booked add-ons, we clean the manifold, EGR and related parts at this stage as well.
+              Add-ons like manifold/EGR cleaning can be completed during the same visit.
             </div>
           </div>
 
@@ -1292,7 +1260,7 @@
                   </div>
                   <div class="pricing-price">from £429</div>
                   <div class="pricing-meta">
-                    Core walnut blasting service for four-cylinder petrol or suitable diesel engines. Gaskets extra.
+                    Core walnut blasting service for four-cylinder petrol DI or suitable diesel engines. Gaskets extra.
                   </div>
                 </div>
 
@@ -1303,7 +1271,7 @@
                   </div>
                   <div class="pricing-price">from £599</div>
                   <div class="pricing-meta">
-                    Extra time for additional cylinders and more complex access. Ideal time to add manifold, EGR and injector cleaning.
+                    Extra time for additional cylinders and more complex access. Ideal time to add manifold/EGR and injector cleaning.
                   </div>
                 </div>
 
@@ -1315,6 +1283,17 @@
                   <div class="pricing-price">from £699</div>
                   <div class="pricing-meta">
                     For V8 engines where access is more involved. Pricing depends heavily on layout and whether front-end removal is required.
+                  </div>
+                </div>
+
+                <div class="pricing-row">
+                  <div>
+                    <div class="pricing-name">High cylinder count engines</div>
+                    <div class="pricing-sub">Including W12 (access-dependent)</div>
+                  </div>
+                  <div class="pricing-price">POA</div>
+                  <div class="pricing-meta">
+                    Pricing confirmed after engine code and access review. Some layouts are straightforward, others are labour-heavy.
                   </div>
                 </div>
 
@@ -1344,8 +1323,8 @@
             </div>
 
             <div class="pricing-note">
-              <strong>Payment &amp; combined work</strong><br />
-              We accept major debit/credit cards and cash on collection. If you’re planning additional mechanical work (timing, injectors, wiring diagnostics), we can combine jobs to save labour where possible.
+              <strong>What we need to quote accurately</strong><br />
+              Registration, mileage, engine (if known) and symptoms. For unusual engines (including W12), we’ll confirm access and pricing before booking.
             </div>
           </aside>
         </div>
@@ -1359,7 +1338,7 @@
           <div class="section-kicker">Before &amp; after</div>
           <h2 class="section-title">Real-world before and after results</h2>
           <p class="section-description">
-            Examples from walnut blasting carried out at Kovac Services Ltd, including cylinder port cleaning and Audi RS4 intake work.
+            Examples from walnut blasting carried out at Kovac Services Ltd.
           </p>
         </div>
 
@@ -1437,20 +1416,22 @@
         <div class="contact-grid">
           <div>
             <!--
-              FIXED FORM DELIVERY:
-              This uses FormSubmit to email submissions to info@kslimited.co.uk (no backend needed).
-              IMPORTANT: First time you test-submit, FormSubmit will email you a confirmation link to activate.
+              FORM FIX (NO THANKS PAGE / NO 404):
+              Uses FormSubmit to email enquiries to info@kslimited.co.uk.
+              There is NO _next redirect, so no /thanks.html 404 anymore.
+
+              IMPORTANT: First time you test-submit, FormSubmit sends a confirmation email to info@kslimited.co.uk.
+              You must click the confirmation link once to activate delivery.
             -->
-            <form class="contact-form-card"
+            <form id="quoteForm" class="contact-form-card"
                   action="https://formsubmit.co/info@kslimited.co.uk"
                   method="POST">
+
               <!-- FormSubmit options -->
               <input type="hidden" name="_subject" value="New Walnut Blasting Enquiry (Website)" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_autoresponse" value="Thanks for your enquiry. We’ve received your details and will reply as soon as possible during opening hours." />
-              <!-- OPTIONAL: redirect after submit (edit to your thank-you page if you have one) -->
-              <input type="hidden" name="_next" value="https://www.walnutcarbonclean.co.uk/thanks.html" />
 
               <div class="form-row">
                 <div class="form-group">
@@ -1482,17 +1463,18 @@
                 <div class="form-group">
                   <label class="form-label" for="engine">Engine / model</label>
                   <input class="form-control" type="text" id="engine" name="Engine / Model"
-                         placeholder="e.g. 2.0 TFSI, N54, 1.6 GDI, 3.0 diesel..." />
+                         placeholder="e.g. 1.0 TSI, 2.0 TFSI, N54, 3.0 diesel, W12..." />
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="serviceType">What are you interested in?</label>
                 <select class="form-select" id="serviceType" name="Service">
-                  <option value="walnut">Walnut blasting, intake valves &amp; ports</option>
+                  <option value="walnut">Walnut blasting (intake valves &amp; ports)</option>
                   <option value="walnut-plus">Walnut blasting + intake manifold clean</option>
                   <option value="walnut-egr">Walnut blasting + intake &amp; EGR clean</option>
                   <option value="walnut-injectors">Walnut blasting + injector ultrasonic clean</option>
+                  <option value="diesel-intake">Diesel intake/EGR restriction advice</option>
                   <option value="diagnostics">Diagnostic assessment first</option>
                   <option value="other">Something else / not sure</option>
                 </select>
@@ -1510,8 +1492,14 @@
                   <span>Send booking / quote request</span>
                 </button>
                 <p class="form-hint">
-                  Prefer a fast reply? Call or WhatsApp with your reg, mileage and engine.
+                  Fastest response: call or WhatsApp with your reg, mileage and engine.
                 </p>
+              </div>
+
+              <!-- On-page success message (no redirect needed) -->
+              <div id="formSuccess" class="highlight-box">
+                <strong>Thanks, your enquiry has been sent.</strong><br />
+                If it’s urgent, call <a href="tel:07833823384">0783 382 3384</a> or WhatsApp us for a faster response.
               </div>
             </form>
           </div>
@@ -1545,6 +1533,13 @@
               <div class="contact-label">Call the workshop</div>
               <div class="contact-value">
                 <a href="tel:07833823384">0783 382 3384</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">
+                <a href="mailto:info@kslimited.co.uk">info@kslimited.co.uk</a>
               </div>
             </div>
 
@@ -1621,10 +1616,7 @@
           const offset = 80;
           const targetPos = rect.top + scrollTop - offset;
 
-          window.scrollTo({
-            top: targetPos,
-            behavior: "smooth",
-          });
+          window.scrollTo({ top: targetPos, behavior: "smooth" });
         }
       });
     });
@@ -1647,15 +1639,24 @@
             b.setAttribute("aria-selected", "false");
           });
 
-          versusPanels.forEach((panel) => {
-            panel.classList.remove("active");
-          });
+          versusPanels.forEach((panel) => panel.classList.remove("active"));
 
           btn.classList.add("active");
           btn.setAttribute("aria-selected", "true");
           const targetPanel = document.getElementById(targetId);
           if (targetPanel) targetPanel.classList.add("active");
         });
+      });
+    }
+
+    // FORM: show success message instantly (no redirect / no 404)
+    const quoteForm = document.getElementById("quoteForm");
+    const formSuccess = document.getElementById("formSuccess");
+
+    if (quoteForm && formSuccess) {
+      formSuccess.style.display = "none";
+      quoteForm.addEventListener("submit", function () {
+        formSuccess.style.display = "block";
       });
     }
   </script>
