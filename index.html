@@ -689,6 +689,124 @@
       background: #ffffff;
     }
 
+    .form-helper {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.08rem;
+    }
+
+    .form-intro {
+      margin: 0 0 1rem;
+      padding: 0.8rem 0.9rem;
+      border-radius: 0.95rem;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      font-size: 0.82rem;
+    }
+
+    .form-section-divider {
+      margin: 1rem 0 0.9rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .form-fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .radio-group {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.35rem;
+    }
+
+    .radio-card {
+      position: relative;
+      min-width: 0;
+    }
+
+    .radio-input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .radio-label {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      min-height: 50px;
+      padding: 0.75rem 0.85rem;
+      border-radius: 0.9rem;
+      border: 1px solid #d1d5db;
+      background: #f9fafb;
+      color: var(--text-soft);
+      cursor: pointer;
+      transition: border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .radio-label:hover {
+      border-color: #fb923c;
+      background: #fff7ed;
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    .radio-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #cbd5e1;
+      background: #ffffff;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .radio-input:checked + .radio-label {
+      border-color: #f97316;
+      background: #fff7ed;
+      color: var(--text-main);
+      box-shadow: 0 0 0 1px #fed7aa;
+    }
+
+    .radio-input:checked + .radio-label .radio-dot {
+      border-color: #f97316;
+      background: #ffffff;
+    }
+
+    .radio-input:checked + .radio-label .radio-dot::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f97316;
+      transform: translate(-50%, -50%);
+    }
+
+    .radio-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.35;
+    }
+
+    .radio-title {
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.85rem;
+    }
+
+    .radio-sub {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
     .form-footer {
       display: flex;
       flex-wrap: wrap;
@@ -775,6 +893,7 @@
       .ba-grid { grid-template-columns: minmax(0, 1fr); }
       .form-row { grid-template-columns: minmax(0, 1fr); }
       .service-main-addons { grid-template-columns: minmax(0, 1fr); }
+      .radio-group { grid-template-columns: minmax(0, 1fr); }
     }
 
     /* Screen-reader only utility */
@@ -1353,13 +1472,87 @@
                   method="POST"
                   autocomplete="on">
 
+              <p class="form-intro">
+                Choose how you’d like us to contact you back and we’ll use that method first where possible during opening hours.
+              </p>
+
+              <fieldset class="form-fieldset">
+                <div class="form-group">
+                  <span class="form-label">How would you like us to contact you back? <span class="form-required">*</span></span>
+                  <div class="form-helper" id="contactMethodHelp">
+                    Pick your preferred reply method so we do not chase you the wrong way.
+                  </div>
+
+                  <div class="radio-group" role="radiogroup" aria-describedby="contactMethodHelp">
+                    <div class="radio-card">
+                      <input class="radio-input" type="radio" id="contact-call" name="preferred_contact_method" value="Call during working hours" checked />
+                      <label class="radio-label" for="contact-call">
+                        <span class="radio-dot" aria-hidden="true"></span>
+                        <span class="radio-text">
+                          <span class="radio-title">Call during working hours</span>
+                          <span class="radio-sub">Best for quick discussion</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="radio-card">
+                      <input class="radio-input" type="radio" id="contact-whatsapp" name="preferred_contact_method" value="WhatsApp" />
+                      <label class="radio-label" for="contact-whatsapp">
+                        <span class="radio-dot" aria-hidden="true"></span>
+                        <span class="radio-text">
+                          <span class="radio-title">WhatsApp</span>
+                          <span class="radio-sub">Useful for photos and messages</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="radio-card">
+                      <input class="radio-input" type="radio" id="contact-email" name="preferred_contact_method" value="Email" />
+                      <label class="radio-label" for="contact-email">
+                        <span class="radio-dot" aria-hidden="true"></span>
+                        <span class="radio-text">
+                          <span class="radio-title">Email</span>
+                          <span class="radio-sub">Best for written quotes</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="radio-card">
+                      <input class="radio-input" type="radio" id="contact-sms" name="preferred_contact_method" value="SMS" />
+                      <label class="radio-label" for="contact-sms">
+                        <span class="radio-dot" aria-hidden="true"></span>
+                        <span class="radio-text">
+                          <span class="radio-title">SMS</span>
+                          <span class="radio-sub">Simple text reply</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contactTime">Best time to contact you</label>
+                  <select class="form-select" id="contactTime" name="best_contact_time">
+                    <option value="ASAP">ASAP</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                  </select>
+                  <div class="form-helper">We’ll aim to reply in this window where possible.</div>
+                </div>
+              </fieldset>
+
+              <div class="form-section-divider"></div>
+
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="name">Full name <span class="form-required">*</span></label>
                   <input class="form-control" type="text" id="name" name="name" required autocomplete="name" />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="phone">Phone number <span class="form-required">*</span></label>
+                  <label class="form-label" for="phone">
+                    Phone number <span class="form-required" id="phoneRequired">*</span>
+                  </label>
                   <input class="form-control"
                          type="tel"
                          id="phone"
@@ -1367,14 +1560,24 @@
                          required
                          autocomplete="tel"
                          inputmode="tel"
-                         placeholder="e.g. 07xxx xxxxxx" />
+                         placeholder="e.g. 07xxx xxxxxx"
+                         aria-describedby="phoneHelp" />
+                  <div class="form-helper" id="phoneHelp">Required for call, WhatsApp or SMS replies.</div>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="email">Email address</label>
-                  <input class="form-control" type="email" id="email" name="email" autocomplete="email" />
+                  <label class="form-label" for="email">
+                    Email address <span class="form-required" id="emailRequired" style="display:none;">*</span>
+                  </label>
+                  <input class="form-control"
+                         type="email"
+                         id="email"
+                         name="email"
+                         autocomplete="email"
+                         aria-describedby="emailHelp" />
+                  <div class="form-helper" id="emailHelp">Optional unless you prefer an email reply.</div>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="reg">Vehicle registration <span class="form-required">*</span></label>
@@ -1428,8 +1631,7 @@
                   <span>Send booking / quote request</span>
                 </button>
                 <p class="form-hint">
-                  We’ll get back to you as soon as possible during opening hours. Your details are only used to respond to your
-                  enquiry.
+                  We’ll get back to you as soon as possible during opening hours using your preferred contact method where possible.
                 </p>
               </div>
             </form>
@@ -1579,11 +1781,50 @@
         });
       });
     }
+
+    // Preferred contact method logic
+    const preferredMethodInputs = document.querySelectorAll('input[name="preferred_contact_method"]');
+    const phoneInput = document.getElementById("phone");
+    const emailInput = document.getElementById("email");
+    const phoneRequired = document.getElementById("phoneRequired");
+    const emailRequired = document.getElementById("emailRequired");
+    const phoneHelp = document.getElementById("phoneHelp");
+    const emailHelp = document.getElementById("emailHelp");
+
+    function updateContactRequirements() {
+      const selectedMethod = document.querySelector('input[name="preferred_contact_method"]:checked')?.value || "Call during working hours";
+
+      const needsPhone =
+        selectedMethod === "Call during working hours" ||
+        selectedMethod === "WhatsApp" ||
+        selectedMethod === "SMS";
+
+      const needsEmail = selectedMethod === "Email";
+
+      phoneInput.required = needsPhone;
+      emailInput.required = needsEmail;
+
+      phoneInput.setAttribute("aria-required", needsPhone ? "true" : "false");
+      emailInput.setAttribute("aria-required", needsEmail ? "true" : "false");
+
+      phoneRequired.style.display = needsPhone ? "inline" : "none";
+      emailRequired.style.display = needsEmail ? "inline" : "none";
+
+      phoneHelp.textContent = needsPhone
+        ? "Required for call, WhatsApp or SMS replies."
+        : "Optional if you prefer an email reply.";
+
+      emailHelp.textContent = needsEmail
+        ? "Required because you selected email as your preferred reply method."
+        : "Optional unless you prefer an email reply.";
+    }
+
+    if (preferredMethodInputs.length) {
+      preferredMethodInputs.forEach((input) => {
+        input.addEventListener("change", updateContactRequirements);
+      });
+      updateContactRequirements();
+    }
   </script>
 </body>
 </html>
-
-
-
-
-
