@@ -1,0 +1,75 @@
+name: Walnut HTML release check
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths: [index.html, .github/workflows/walnut-html-release.yml]
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Exact-head HTML validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify the exact reviewed HTML
+        env:
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, re, subprocess
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          def require(condition, explanation):
+              if not condition:
+                  raise SystemExit(explanation)
+
+          def git(*args):
+              return subprocess.check_output(["git", *args])
+
+          def blob(data):
+              return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+
+          class Page(HTMLParser):
+              def __init__(self, data):
+                  super().__init__()
+                  self.ids = []
+                  self.controls = []
+                  self.proof_links = 0
+                  self.feed(data.decode("utf-8"))
+                  self.close()
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if "id" in attrs:
+                      self.ids.append(attrs["id"])
+                  if tag in {"form", "input", "textarea", "select", "button", "meta", "link", "script"}:
+                      self.controls.append((tag, attrs))
+                  if tag == "a" and attrs.get("href") == "#proof" and "text-decoration:underline" in attrs.get("style", ""):
+                      self.proof_links += 1
+
+          intended, base_sha = os.environ["PR_SHA"], os.environ["BASE_SHA"]
+          require(all(re.fullmatch(r"[a-f0-9]{40}", sha) for sha in (intended, base_sha)), "Missing exact Git SHAs")
+          require(git("rev-parse", "HEAD").decode().strip() == intended, "Checked out SHA is not the exact pull request head")
+          candidate = Path("index.html").read_bytes()
+          require(candidate == git("show", "HEAD:index.html"), "Working HTML differs from committed HTML")
+          rendered = Page(candidate)
+          for anchor in ("pricing", "proof", "contact"):
+              require(rendered.ids.count(anchor) == 1, "Missing or duplicate section: " + anchor)
+          require(any(tag == "form" for tag, _ in rendered.controls), "Quote form is missing")
+          if os.environ["PR_BRANCH"] == "review/walnut-scope-card":
+              baseline = git("show", base_sha + ":index.html")
+              require(blob(baseline) == "ac56951c09476f5dfbac4374a9da931f89b964bd", "Baseline HTML changed; review the change again")
+              require(blob(candidate) == "4e95fa5e087626d8797946fded4436991392f7fd", "Candidate differs from the independently reviewed HTML")
+              require(Page(baseline).controls == rendered.controls, "Form controls or metadata changed")
+              require(rendered.proof_links == 1, "Underlined evidence link is missing or duplicated")
+          print("PASS exact head", intended, "HTML blob", blob(candidate))
+          PY
